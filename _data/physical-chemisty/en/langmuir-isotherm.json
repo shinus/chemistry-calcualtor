@@ -1,0 +1,140 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Analyze Surface Interactions with Precision Using This Calculator",
+    "H1": "Adsorption Behaviour Calculator for Langmuir Isotherms",
+    "META": "For an analysis of adsorption phenomena and an understanding of surface interactions, use our Langmuir Isotherm calculator.",
+    "TITLE": "Langmuir Isotherm Calculator | Adsorption Analysis Tool",
+    "keywords": "Langmuir Isotherm Calculator",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Equilibrium constant (K eq)",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Partial pressure (P)",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "dateTimePicker": false
+        }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/physical-chemisty/langmuir-isotherm.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }
+  

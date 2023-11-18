@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "To calculate solution concentrations precisely, use our Concentration Calculator. effortlessly simplify chemical and scientific computations.",
+    "H1": "Calculate your concentration and get precise answers quickly",
+    "H2": "Calculate Concentration More Efficiently Using Our Calculator",
+    "TITLE": "Concentration Calculator | Calculate Solutions with Precision",
+    "keywords": "prefix converter",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/area-converter",
+              "name": "area converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/fuel-converter",
+              "name": "fuel converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/length-converter",
+              "name": "length converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/prefix-converter",
+              "name": "prefix converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/speed-converter",
+              "name": "speed converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/volume-converter",
+              "name": "volume converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/weight-converter",
+              "name": "weight converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Density",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "inputName": "boxinput",
+          "dropDown": "in",
+          "dropDownId": "inputdrop1",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Molar mass",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "inputName": "boxinput",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Molarity",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input3",
+          "dropDown": "in",
+          "dropDownId": "inputdrop3",
+          "dropDownName": "boxmenu",
+          "inputName": "boxinput",
+          "dateTimePicker": false
+        },
+        {
+            "labelName": "Percentage concentration",
+            "labelId": "option1__id",
+            "inputBox": "text",
+            "inputId": "input4",
+            "inputName": "boxinput",
+            "dateTimePicker": false
+        }
+        ,
+        {
+          "labelName": "Mass per 100g H2O",
+          "labelId": "option1__id",
+          "dropDown": "in",
+          "dropDownId": "inputdrop5",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        }
+      ],
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit",
+      "resultDiv": "true",
+      "resultDisplay": "none"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": ["/js/mixture-solution/Concentration.js"],
+    "cssfilepaths": ["/css/style.css"]
+  }
+  

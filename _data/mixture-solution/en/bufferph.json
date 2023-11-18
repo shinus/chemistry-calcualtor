@@ -1,0 +1,158 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Utilizing buffer solutions to adjust pH is made simple by our buffer pH calculator. Make sure your experiments and liquids have proper pH levels.",
+    "H1": "Buffer pH Calculator: Simplify Accurate pH Management",
+    "H2": "Utilize Our Buffer pH Calculation Tool to Achieve Accurate pH Levels",
+    "TITLE": "Buffer pH Calculator | Achieve Precise pH Control Easily",
+    "keywords": "buffer pH",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/area-converter",
+              "name": "area converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/fuel-converter",
+              "name": "fuel converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/length-converter",
+              "name": "length converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/prefix-converter",
+              "name": "prefix converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/speed-converter",
+              "name": "speed converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/volume-converter",
+              "name": "volume converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/weight-converter",
+              "name": "weight converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Buffer type",
+          "labelId": "option1__id",
+          "dropDown": "in",
+          "dropDownId": "inputdrop1",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Ka",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "inputName": "boxinput",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "pKa",
+          "labelId": "option3__id",
+          "inputBox": "text",
+          "inputId": "input3",
+          "inputName": "boxinput",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Acid concentration",
+          "labelId": "option4__id",
+          "dropDown": "in",
+          "inputBox": "text",
+          "inputId": "input4",
+          "dropDownId": "inputdrop4",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+            "labelName": "Salt concentration",
+            "labelId": "option5__id",
+            "dropDown": "in",
+            "inputBox": "text",
+            "inputId": "input5",
+            "dropDownId": "inputdrop5",
+            "dropDownName": "boxmenu",
+            "dateTimePicker": false
+        }
+      ],
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit",
+      "resultDiv": "true",
+      "resultDisplay": "none"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": ["/js/mixture-solution/bufferph.js"],
+    "cssfilepaths": ["/css/style.css"]
+  }
+  

@@ -1,0 +1,174 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Use this angle converter to make sure your angles are always converted correctly with this angle converter.",
+    "H1": "Angle converter online",
+    "H2": "Enter your value in given tool and then click on the ‘calculate angle’ button.",
+    "TITLE": "Angle Converter - A simple and effective way to convert angles",
+    "keywords": "angle converter",
+    "color": "#000",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/acceleration-converter",
+                        "name": "acceleration converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/angle-converter",
+                        "name": "angle converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/anguler-velocity-converter",
+                        "name": "anguler velocity converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/density-converter",
+                        "name": "density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/force-converter",
+                        "name": "force converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/force-length-converter",
+                        "name": "force length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/inertia-converter",
+                        "name": "inertia converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/pressure-converter",
+                        "name": "pressure converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/sound-converter",
+                        "name": "sound converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/time-conversion",
+                        "name": "time-conversion",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "FAQ": [
+        {
+            "question": "What is an angle unit converter online?",
+            "answer": "You may convert angles between many units of measurement, including degrees, radians, and gradians, with our online angle unit converter. It makes it simple for you to convert angles between different units, saving you time and effort from tedious computations."
+        },
+        {
+            "question": "How does an angle unit converter online work?",
+            "answer": "Simply enter the value and select the original unit, then choose the unit you want to convert to and our tool will easily convert the value into the desired unit."
+        },
+        {
+            "question": "Can I convert degrees to radians using this angle unit converter online?",
+            "answer": "Yes, both units can be converted using our tool. So, with our angle unit converter, you can quickly convert from degrees to radians or vice versa."
+        },
+        {
+            "question": "How accurate are angle unit converters online?",
+            "answer": "Online angle unit converters vary in accuracy. Reliable converters offer accurate results up to several decimal places, but some may only provide approximations. Verify the unit of measurement and use reputable converters to ensure accuracy."
+        },
+        {
+            "question": "What are the different units of angle measurement?",
+            "answer": "The most commonly used units of angle measurement are degrees, radians, and grads (also known as gon). Degrees are the most widely used, while radians are commonly used in mathematics and physics. Grads are used in some countries for land surveying."
+        },
+        {
+            "question": "What are the advantages of using an angle unit converter?",
+            "answer": "An angle unit converter allows for easy and accurate conversion between different units of measurement, saving time and effort. It also helps avoid errors and ensures consistency in calculations, making it a valuable tool for academics, professionals, and students alike."
+        },
+        {
+            "question": "How affordable is an angle unit converter?",
+            "answer": "An angle unit converter is typically free and easily accessible online, making it a cost-effective solution for converting between different units of measurement. Some premium converters or software may come with a fee, but there are many free options available."
+        }
+    ],
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "No cost to use",
+            "content": "Use this free online angle unit conversion tool to complete the unit conversion for you without being charged any amount. You don't have to worry about paying anything to use this tool an endless number of times for free."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Cloud based tool",
+            "content": "This is a cloud-based angle unit converter tool which means it performs the calculations online. Being a cloud-based product, our tool can be accessed from any part of the world, anytime. You can access it from any device with an active internet connection."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Time saving conversions",
+            "content": "Because it uses cloud computing, our web angle unit conversion tool has extremely quick processing times, allowing users to see findings as soon as possible. We have optimized our servers to speed up conversions and save consumers time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Accurate Results",
+            "content": "Our angle unit converter tool strives to provide users with the most accurate answers. It has been tested several times and the results are accurate every time the tool is used. Providing accurate results helped us build trust in our user base."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "No-software installation",
+            "content": "Our angle unit conversion tool is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time"
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Supports numerous units",
+            "content": "Numerous units are supported by our online angle unit conversion tool. Users can select the unit they want to convert from or into from a large selection. Several of the available units include radian, minute, second, etc."
+        }
+    ],
+    "jsfilepaths": [
+        "/assets/js/angle-conversion.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Enter Value:",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "from1"
+            },
+            {
+                "labelName": "Convert From :",
+                "labelId": "Height__id",
+                "dropDown": "ft",
+                "dropDownId": "from",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Convert To :",
+                "labelId": "Weight__id",
+                "dropDown": "lb",
+                "dropDownId": "to",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

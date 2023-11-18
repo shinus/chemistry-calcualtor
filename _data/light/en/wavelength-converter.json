@@ -1,0 +1,109 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate wavelength’ button.",
+     "H1": "wavelength converter online",
+     "META": "Convert from one wavelength of light to another by using our free online wavelength converter tool in an easy way.",
+     "TITLE": "Wavelength Converter – An Easy and Effective Way to Convert Wavelengths",
+     "keywords": "wavelength converter",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/intensity-converter",
+                              "name": "intensity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/luminance-converter",
+                              "name": "luminance converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/wavelength-converter",
+                              "name": "wavelength converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/lightbulb.svg",
+               "header": "Free to use",
+               "content": "Use this free online frequency wave length unit conversion tool, that converts unit for you without asking you to pay any fees. You can use this tool for free infinite times and not worry about paying a single dime."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/target.svg",
+               "header": "Web-based tool",
+               "content": "Because this frequency wave length unit converter is web-based, the calculations are done online on our server. Since it is a web-based solution, anyone anywhere in the globe can use our tool at any time. Any device with a live internet connection can access it with no problem."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cross.svg",
+               "header": "No-software installation",
+               "content": "Our frequency wave length unit conversion tool is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/shield.svg",
+               "header": "Time saving conversions",
+               "content": "Because frequency wave length unit converter uses cloud computing, our web tool has extremely quick processing times, allowing users to see findings as soon as possible. We have optimized our servers to speed up conversions and save consumers time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/fast.svg",
+               "header": "Accurate Results",
+               "content": " Our  frequency wave length unit conversion tool strives to provide users with the most accurate answers. It has been tested several times and the results are accurate every time the tool is used. Providing accurate results helped us build trust in our user base."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cloud_new.svg",
+               "header": "Supports numerous units",
+               "content": " Numerous units are supported by our online frequency wave length unit conversion tool. Users can select the unit they want to convert from or into from a large selection. Several of the available units include Kilohertz, Nanohertz, etc."
+          }
+     ],
+     "FAQ": [],
+     "jsfilepaths": [
+          "/assets/js/frequency-wavelength-conversion.js"
+     ],
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "Enter Value:",
+                    "labelId": "Height__id",
+                    "inputBox": "text",
+                    "inputId": "from1"
+               },
+               {
+                    "labelName": "Convert From :",
+                    "labelId": "Height__id",
+                    "dropDown": "ft",
+                    "dropDownId": "from",
+                    "dateTimePicker": false
+               },
+               {
+                    "labelName": "Convert To :",
+                    "labelId": "Weight__id",
+                    "dropDown": "lb",
+                    "dropDownId": "to",
+                    "dateTimePicker": false
+               }
+          ],
+          "ButtonValue": "Convert",
+          "ButtonId": "calcBtn",
+          "ButtonType": "submit",
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     }
+}

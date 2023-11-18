@@ -1,0 +1,143 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "To evaluate the calibre of your water, use our Water Hardness Calculator. Find out how soft or hard your water is, then take action to make it better.",
+    "H1": "Calculate Your Water Hardness and Evaluate Your Water Quality",
+    "H2": "Use our calculator to determine the hardness of your water and improve it.",
+    "TITLE": " Online Water Hardness Calculator | Measure Your Water Quality",
+    "keywords": "area converter",
+    "color": "#000",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/area-converter",
+                        "name": "area converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/fuel-converter",
+                        "name": "fuel converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/length-converter",
+                        "name": "length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/prefix-converter",
+                        "name": "prefix converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/speed-converter",
+                        "name": "speed converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/volume-converter",
+                        "name": "volume converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/weight-converter",
+                        "name": "weight converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/images/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "Free to use",
+            "content": "Our online area conversion tool is absolutely free to use with no hidden costs and provides unlimited usage every day. You don't need to pay us a single dime for using our services."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Fast and Efficient",
+            "content": "Our online area converter tool thrives to provide you with fast and efficient results so that you don't have to waste even a single second of your time. Get the results within a second of clicks."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "Accessible",
+            "content": "Our area converter tool is an online web-based program, which makes it super accessible from any corner of the world. You just need an active internet connection to use this tool. Use it on a PC, mobile or tablet."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Wide range of units",
+            "content": " We provide a wide range of area units that you can use to convert. Most of the common areas units like square feet, acres, or square inches can be used for a better understanding of the area."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Accurate and precise",
+            "content": "Converting one area unit into another can include complicated mathematical calculations, but our tool efficiently converts the area unit and provides precise conversions every time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Easy to use",
+            "content": "Our online area converter tool has a very user-friendly interface that lets users comfortably use the tool from the very beginning. Easy to understand and basic options that let you do the work easily."
+        }
+    ],
+    "jsfilepaths": [
+        "/js/mixture-solution/water-hardness.js"
+    ],
+
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Calcium content:",
+                "labelId": "calcium_id",
+                "inputBox": "text",
+                "inputId": "input1",
+                "dropDown": "g/L",
+                "dropDownId": "inputdrop1",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Magnesium content:",
+                "labelId": "magnesium_id",
+                "inputBox": "text",
+                "inputId": "input2",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop2",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Water hardness",
+                "labelId": "water_id",
+                "inputBox": "text",
+                "inputId": "input3",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop3",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Calculations for dilution are made easier by our Solution Dilution Calculator. With ease, you may arrive at precise solutions for your tests and formulas.",
+    "H1": "Calculate solution dilutions more easily with this tool",
+    "H2": "Utilize Our Dilution Calculator to Get Accurate Results in Your Tests",
+    "TITLE": "Solution Dilution Calculator | Precise Dilution Calculations",
+    "keywords": "prefix converter",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/area-converter",
+                        "name": "area converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/fuel-converter",
+                        "name": "fuel converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/length-converter",
+                        "name": "length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/prefix-converter",
+                        "name": "prefix converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/speed-converter",
+                        "name": "speed converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/volume-converter",
+                        "name": "volume converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/weight-converter",
+                        "name": "weight converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Concentration(initial)",
+                "labelId": "option1__id",
+                "inputBox": "text",
+                "inputId": "input1",
+                "inputName": "boxinput",
+                "dropDown": "in",
+                "dropDownId": "inputdrop1",
+                "dropDownName": "boxmenu",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Volume(initial)",
+                "labelId": "option1__id",
+                "inputBox": "text",
+                "inputId": "input2",
+                "inputName": "boxinput",
+                "dropDown": "in",
+                "dropDownId": "inputdrop2",
+                "dropDownName": "boxmenu",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Concentration(final)",
+                "labelId": "option1__id",
+                "inputBox": "text",
+                "inputId": "input3",
+                "inputName": "boxinput",
+                "dropDown": "in",
+                "dropDownId": "inputdrop3",
+                "dropDownName": "boxmenu",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Volume(final)",
+                "labelId": "option1__id",
+                "inputBox": "text",
+                "inputId": "input4",
+                "inputName": "boxinput",
+                "dropDown": "in",
+                "dropDownId": "inputdrop4",
+                "dropDownName": "boxmenu",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": "1",
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/guaranty.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "FAQ": [
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "jsfilepaths": [
+        "/js/mixture-solution/solution-dilution.js"
+    ],
+    "cssfilepaths": [
+        "/css/style.css"
+    ]
+}

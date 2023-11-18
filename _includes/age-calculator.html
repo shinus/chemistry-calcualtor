@@ -1,0 +1,67 @@
+<style>
+     #result-section p{
+          line-height: 0.41 !important;
+          text-align: start;
+     }
+     .result-section span {
+    font-size: 15px;
+    }
+</style>
+<script src="/js/calendardateinput.js"></script>
+<div class="container">
+     <div class="calculator-workspace">
+          <div class="row w-100 mx-auto">
+               <form id="calculator-form" class="w-100">
+                    <div class="row" id="calculator-row-1">
+                         <div class="col-md-12">
+                              <form name="calcf">
+                                   <tr>
+                                     <td><label style="width: 100%;" for="">Date of Birth</label></td>
+                                     <td valign="middle">
+                                       <script>date_input_box('today', true)</script>
+                                     </td>
+                                   </tr>
+                              </form>
+                         </div>
+                    </div>
+                    <br>
+                    <div class="row" id="calculator-row-4">
+                         <div class="col-md-12">
+                              <form name="calcf">
+                                   <tr>
+                                     <td><label style="width: 100%;" for="">Age at the Date of</label></td>
+                                     <td valign="middle">
+                                       <script>date_input_box('lastdate', true)</script>
+                                     </td>
+                                   </tr>
+                              </form>
+                         </div>
+                    </div>
+                    <div id="dynamic-section"></div>
+               </form>
+
+          </div>
+          <div class="row w-100 mx-auto">
+               <div class="col-12 mt-4 px-0">
+                    <div class="d-flex justify-content-end">
+                         <button class="submit-button" style="background-color:#fa980b ;" type="submit"
+                              id="calculate_btn">Calculate</button>
+                    </div>
+
+               </div>
+               <div class="col-12 mt-3">
+                    <div class="result-section" id="result-section" style="font-size: 20px;">
+                         <div class="head_result" style="display: none;">Result</div>
+                         <p id="rsl1"></p>
+                         <p id="rsl2"></p>
+                         <p id="rsl3"></p>
+                         <p id="rsl4"></p>
+                         <p id="rsl5"></p>
+                         <p id="rsl6"></p>
+                         <p id="rsl7"></p>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+</div>

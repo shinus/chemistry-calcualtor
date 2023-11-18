@@ -1,0 +1,125 @@
+{
+    "H1": "Vapor Pressure Calculator",
+    "H2": "Enter your data to calculate gallons per minute",
+    "TITLE": "Vapor Pressure of Water Calculator",
+    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "img": "/assets/images/swimming.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#9F0D7F",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/chemical-thermodynamics/vapor-pressure.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Clausius-Clapeyron equation"
+            },  
+            {
+                "labelName": "Initial temperature",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "INtemperature_input_id",
+                "unit": "kelvins (K)",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Final temperature",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "FItemperature_input_id",
+                "unit": "kelvins (K)",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Initial pressure",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "INpressure_input_id",
+                "unit": "pascals (Pa)",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Molar enthalpy of vaporization",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "vaporization_input_id",
+                "unit": "J/mol",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Raoult's law"
+            },
+            {
+                "labelName": "Mole fraction",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "function_input_id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Vapor pressure of the solvent",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "solvent_input_id",
+                "unit": "pascals (Pa)",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

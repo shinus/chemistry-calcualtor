@@ -1,0 +1,111 @@
+{
+  "Language": "English",
+  "htmlLangAtt": "en",
+  "img": "/img/icon2.png",
+  "imgwidth": "35px",
+  "imgheight": "35px",
+  "imgalt": "music.png",
+  "META": "Keep track of your resolutions with the help of our free online tool and our practical, user-friendly storage options.",
+  "H1": "Free online resolution storage tool",
+  "H2": "Enter your value in given tool and then click on the ‘calculate resolution storage’ button.",
+  "TITLE": "Resolution Storage: The Most Convenient Way to Store Your Resolutions",
+  "keywords": "resolution storage",
+  "megaMenu": {
+    "nav-link-name": "Tools",
+    "dropdown": [
+      {
+        "categoryName": "paraphrasing tools",
+        "links": [
+          {
+            "url": "/resolution-storage",
+            "name": "resolution storage",
+            "iconSrc": "/assets/images/convert.png"
+          },
+          {
+            "url": "/typography-storage",
+            "name": "typography storage",
+            "iconSrc": "/assets/images/convert.png"
+          },
+          {
+            "url": "/data-storage",
+            "name": "data storage",
+            "iconSrc": "/assets/images/convert.png"
+          },
+          {
+            "url": "/data-transfer-storage",
+            "name": "data transfer storage",
+            "iconSrc": "/assets/images/convert.png"
+          }
+        ]
+      }
+    ]
+  },
+  "calculatorData": {
+    "calculatorRow": [
+      {
+        "labelName": "option first",
+        "labelId": "option1__id",
+        "inputBox": "text",
+        "inputId": "option1",
+        "inputName": "boxinput",
+        "dropDown": "in",
+        "dropDownId": "Box",
+        "dropDownName": "boxmenu",
+        "dateTimePicker": false
+      }
+    ],
+    "resultDiv": "true",
+    "resultDisplay": "none"
+  },
+  "TEXTUAL_CONTENT": [
+    {
+      "priority": "1",
+      "logoUrl": "/assets/easy.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/guaranty.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/protect.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/support.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/easy.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/bulb.svg",
+      "header": "",
+      "content": ""
+    }
+  ],
+  "FAQ": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "jsfilepaths": [
+    "/js/computer/resolution-storage.js",
+    "/js/converter.js"
+  ],
+  "cssfilepaths": [
+    "/css/style.css"
+  ]
+}

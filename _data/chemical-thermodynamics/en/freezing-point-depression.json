@@ -1,0 +1,89 @@
+{
+    "H1": "Freezing Point Depression Calculator",
+    "H2": "Enter your data to calculate gallons per minute",
+    "TITLE": "Freezing Point Depression Calculator",
+    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "img": "/assets/images/swimming.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#9F0D7F",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/chemical-thermodynamics/freezing-point-depression.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Molality",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "molality_input_id",
+                "unit": "mol/kg",
+                "dropDownId": "cth_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Solvent",
+                "labelId": "rms__id",
+                "inputId": "constant_input_id",
+                "dropDown": "°C⋅kg/mol",
+                "dropDownId": "solvent_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

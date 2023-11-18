@@ -1,0 +1,89 @@
+<style>
+     #result-section p {
+          line-height: 0.41 !important;
+          text-align: start;
+     }
+
+     .result-section span {
+          font-size: 15px;
+     }
+</style>
+<script src="/js/calendardateinput.js"></script>
+<div class="container">
+     <div class="calculator-workspace">
+          <div class="row w-100 mx-auto">
+               <form id="calculator-form" class="w-100">
+                    <div class="row" id="calculator-row-1">
+                         <div class="col-md-12">
+                              <form name="calcf">
+                                   <tr>
+                                        <td><label style="width: 100%;" for="">Date of Birth</label></td>
+                                        <td valign="middle">
+                                             <script>date_input_box('today', true)</script>
+                                        </td>
+                                   </tr>
+                              </form>
+                         </div>
+                    </div>
+                    <br>
+                    <div class="row" id="calculator-row-4">
+                         <div class="col-md-12">
+                              <form name="calcf">
+                                   <tr>
+                                        <td><label style="width: 100%;" for="">Age at the Date of</label></td>
+                                        <td valign="middle">
+                                             <script>date_input_box('lastdate', true)</script>
+                                        </td>
+                                   </tr>
+                              </form>
+                         </div>
+                    </div>
+                    <div id="dynamic-section"></div>
+               </form>
+
+          </div>
+          <div class="row w-100 mx-auto">
+               <div class="col-12 mt-4 px-0">
+                    <div class="d-flex justify-content-end">
+                         <button class="submit-button" style="background-color:#fa980b ;" type="submit"
+                              id="calculate_btn">Calculate</button>
+                    </div>
+
+               </div>
+               <div class="col-12 mt-3">
+                    <div class="result-section" id="result-section" style="display: block;">
+                         <div class="head_result" style="display: none;">Result</div>
+                         <div class="row" id="calculator-row-7" style="margin-bottom: 20px;">
+                              <div class="col-md-12">
+                                   <div class="row">
+                                        <div class="col-md-4"><label>Years</label><input id="Y" disabled=""
+                                                  class="form-control"></div>
+                                        <div class="col-md-4"><label>Months</label><input id="M" class="form-control"
+                                                  disabled=""></div>
+                                        <div class="col-md-4"><label>Days</label><input id="D" disabled=""
+                                                  class="form-control"></div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div id="result">
+                              <div class="row"><label class="col-md-4">Seconds</label><input
+                                        class="col-md-8 form-control" type="text" id="SS" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Minutes</label><input
+                                        class="col-md-8 form-control" type="text" id="MIN" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Hours</label><input class="col-md-8 form-control"
+                                        type="text" id="HH" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Days</label><input class="col-md-8 form-control"
+                                        type="text" id="DD" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Weeks</label><input class="col-md-8 form-control"
+                                        type="text" id="WW" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Months</label><input
+                                        class="col-md-8 form-control" type="text" id="MM" disabled=""></div>
+                              <div class="row"><label class="col-md-4">Years</label><input class="col-md-8 form-control"
+                                        type="text" id="YY" disabled=""></div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+</div>

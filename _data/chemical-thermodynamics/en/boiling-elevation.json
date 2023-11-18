@@ -1,0 +1,99 @@
+{
+    "H1": "Boiling Point Elevation Calculator",
+    "H2": "Enter your data to calculate gallons per minute",
+    "TITLE": "Boiling Point Elevation Calculator",
+    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "img": "/assets/images/swimming.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#9F0D7F",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/chemical-thermodynamics/boiling-elevation.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Boiling point of pure solvent (T_solvent)",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "solvent_input_id",
+                "unit": "°C",
+                "dropDownId": "cth_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Ebullioscopic constant (K_b)",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "constant_input_id",
+                "unit": "°C⋅kg/mol",
+                "dropDownId": "condition_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Molality (m)",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "molarity_input_id",
+                "unit": "mol/kg",
+                "dropDownId": "condition_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

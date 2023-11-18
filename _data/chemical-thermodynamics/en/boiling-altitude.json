@@ -1,0 +1,81 @@
+{
+    "H1": "Boiling Point at Altitude Calculator",
+    "H2": "Enter your data to calculate gallons per minute",
+    "TITLE": "Boiling Point at Altitude Calculator",
+    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "img": "/assets/images/swimming.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#9F0D7F",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/chemical-thermodynamics/boiling-altitude.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Altitude",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "altitude_input_id",
+                "unit": "ft",
+                "dropDownId": "cth_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

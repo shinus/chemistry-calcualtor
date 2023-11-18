@@ -1,0 +1,89 @@
+{
+    "H1": "Online Currency Conversion Tool for free",
+    "H2": "Enter the value and choose the currency below",
+    "TITLE": "Convert Currencies Online- Free Currency Value converter ",
+    "META": "Having trouble knowing the cost of international items? Our currency converter can easily tell you the cost of items in your own currency with a single click.",
+    "img": "/assets/images/convert.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#000",
+    "keyword": "",
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/images/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/assets/js/script.js"
+    ],
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "No cost to use",
+            "content": "Use this free online currency conversion tool to convert currency value for you without being charged any amount. You don't have to worry about paying anything to use this tool an endless number of times for free."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Cloud based tool",
+            "content": "This is a cloud-based currency conversion tool which means it performs the calculations online. Being a cloud-based product, our tool can be accessed from any part of the world, anytime. You can access it from any device with an active internet connection."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "No-software installation",
+            "content": "Our currency conversion tool is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Time saving conversions",
+            "content": "Because our currency converter uses cloud computing, our web tool has extremely quick processing times, allowing users to see findings as soon as possible. We have optimized our servers to speed up conversions and save consumers time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Accurate Results",
+            "content": "Our currency conversion tool strives to provide users with the most accurate answers. It has been tested several times and the results are accurate every time the tool is used. Providing accurate results helped us build trust in our user base."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Supports numerous units",
+            "content": "Numerous currencies are supported by our online currency conversion tool. Users can select the unit they want to convert from or into from a large selection. Several of the available units include USD, INR, JPY, etc."
+        }
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Amount",
+                "labelId": "amount",
+                "inputId": "amount",
+                "inputBox": "text",
+                "inputValue": 100
+            },
+            {
+                "labelName": "Convert From :",
+                "labelId": "Weight__id",
+                "dropDown": "lb",
+                "dropDownId": "currency-select",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Convert To :",
+                "labelId": "convert-to",
+                "dropDown": "lb",
+                "dropDownId": "selectto",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

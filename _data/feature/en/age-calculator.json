@@ -1,0 +1,63 @@
+{
+  "H1": "Online Age Calculator ",
+  "H2": "Compute your age online easily with no worries",
+  "TITLE": "Age Calculator - Calculate your age accurately online for free",
+  "META": "We are offering a handy tool to calculate age accurately online using our age calculator. Super easy to use and free for everyone on the web.",
+  "color": "#fa980b",
+  "height": "300px",
+  "img": "/img/icon2.png",
+  "imgwidth": "40px",
+  "imgheight": "35px",
+  "imgalt": "altvalue",
+  "TEXTUAL_CONTENT": [
+    {
+      "priority": 1,
+      "logoUrl": "/assets/bulb.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/guaranty.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/support.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/protect.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/easy.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/cloud.svg",
+      "header": "",
+      "content": ""
+    }
+  ],
+  "FAQ": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "jsfilepaths": [
+   "/js/calendardateinput.js",
+    "/js/age.js"
+  ],
+  "cssfilepaths": [
+    "/css/style.css"
+  ]
+}

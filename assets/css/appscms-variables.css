@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #ef7200;
+  --font-size: 16px;
+  --secondary-color: #F8F8F8;
+  --secondary-color-1: #FAFAFA;
+  --secondary-color-3: #F4F5FF;
+  --black-color: #202020;
+  --white-color: #FFFFFF;
+  --black-light: #777777;
+  --font-family: "Inter", sans-serif;
+  --text-color: #303030;
+  --success-color: #3DE968;
+  --error-color: #E33E3E;
+  --warning-color: #EFCF2A;
+  --dark-gray: #4D4D4D;
+  --mid-gray: #1D1D1D;
+  --light-gray: rgb(137, 137, 137);
+}
+
+.appscms-tool .tool-top:hover{
+  filter: hue-rotate(0deg) saturate(110%) brightness(100%);
+}

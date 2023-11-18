@@ -1,0 +1,153 @@
+{
+    "H1": "Free Time Unit Converter Tool ",
+    "H2": "Enter the Value and Units in following columns",
+    "TITLE": "Online Time unit converter| Convert any time unit into other",
+    "META": "Our online time unit converter lets you convert the time units into other units, Easy to use tool for students, that simplifies unit conversion.",
+    "img": "/assets/images/convert.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#000",
+    "keyword": "",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/acceleration-converter",
+                        "name": "acceleration converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/angle-converter",
+                        "name": "angle converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/anguler-velocity-converter",
+                        "name": "anguler velocity converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/density-converter",
+                        "name": "density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/force-converter",
+                        "name": "force converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/force-length-converter",
+                        "name": "force length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/inertia-converter",
+                        "name": "inertia converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/pressure-converter",
+                        "name": "pressure converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/sound-converter",
+                        "name": "sound converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/torque-converter",
+                        "name": "torque converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/time-conversion",
+                        "name": "time-conversion",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/images/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "No cost to use",
+            "content": "Use this free online time unit conversion tool to convert time units for you without being charged any amount. You don't have to worry about paying anything to use this tool an endless number of times for free."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Cloud based tool",
+            "content": "This is a cloud-based time unit conversion tool which means it performs the calculations online. Being a cloud-based product, our tool can be accessed from any part of the world, anytime. You can access it from any device with an active internet connection."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "No-software installation",
+            "content": "Our time unit converter is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Time saving conversions",
+            "content": "Because it uses cloud computing, our web time unit conversion tool has extremely quick processing times, allowing users to see findings as soon as possible. We have optimized our servers to speed up conversions and save consumers time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Accurate Results",
+            "content": "Our time unit converter strives to provide users with the most accurate answers. It has been tested several times and the results are accurate every time the tool is used. Providing accurate results helped us build trust in our user base."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Supports numerous units",
+            "content": "Numerous units are supported by our online time unit conversion tool. Users can select the unit they want to convert from or into from a large selection. Several of the available units include days, hours, seconds, etc."
+        }
+    ],
+    "FAQ": [],
+    "jsfilepaths": [
+        "/assets/js/time-conversion.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Enter Value:",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "from1"
+            },
+            {
+                "labelName": "Convert From :",
+                "labelId": "Height__id",
+                "dropDown": "ft",
+                "dropDownId": "from",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Convert To :",
+                "labelId": "Weight__id",
+                "dropDown": "lb",
+                "dropDownId": "to",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

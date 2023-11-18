@@ -1,0 +1,146 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate specific heat capacity’ button.",
+     "H1": "specific heat capacity converter online",
+     "META": "Use this free online specific heat capacity converter to find the heat capacity of any material with this handy online converter.",
+     "TITLE": "Specific heat capacity converter- By using this online tool for specific heat conversion",
+     "keywords": "specific heat capacity converter",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/fuel-efficiency-mass-converter",
+                              "name": "fuel-efficiency-mass converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-volume-converter",
+                              "name": "fuel-efficiency-volume converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-density-converter",
+                              "name": "heat-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-flux-density-converter",
+                              "name": "heat-flux-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-transfer-coefficien-converter",
+                              "name": "heat-transfer-coefficien converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/specific-heat-capacity-converter",
+                              "name": "specific-heat-capacity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/temperature-converter",
+                              "name": "temperature converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-conductivity-converter",
+                              "name": "thermal-conductivity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-expansion-converter",
+                              "name": "thermal-expansion converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-resistance-converter",
+                              "name": "thermal-resistance converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-conversion",
+                              "name": "fuel-efficiency-conversion",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "option first",
+                    "labelId": "option1__id",
+                    "inputBox": "text",
+                    "inputId": "option1",
+                    "inputName": "boxinput",
+                    "dropDown": "in",
+                    "dropDownId": "Box",
+                    "dropDownName": "boxmenu",
+                    "dateTimePicker": false
+               }
+          ],
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": "1",
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/guaranty.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/protect.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/support.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/bulb.svg",
+               "header": "",
+               "content": ""
+          }
+     ],
+     "FAQ": [
+          {
+               "question": "",
+               "answer": ""
+          }
+     ],
+     "jsfilepaths": [
+          "/js/heat/specific-heat-capacity-converter.js",
+          "/js/converter.js"
+     ],
+     "cssfilepaths": [
+          "/css/style.css"
+     ]
+}

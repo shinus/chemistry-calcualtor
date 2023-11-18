@@ -1,0 +1,145 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Utilize Our Calculator to Simplify Concentration Conversions",
+    "H1": "Calculator for PPM to Molarity: Accurately Convert Concentrations",
+    "META": "Utilise our PPM to Molarity Calculator to simplify concentration conversions. Obtain precise outcomes from your chemical calculations and tests.",
+    "TITLE": "PPM to Molarity Calculator | Convert Concentrations Easily",
+    "keywords": "PPM to Molarity",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "ppm",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "dropDown": "g",
+          "dropDownId": "inputdrop1",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Molar mass",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "dropDown": "eq/g",
+          "dropDownId": "inputdrop2",
+          "dateTimePicker": false
+        }
+        
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/Stoichiometry calculators/PPMtomol.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }
+

@@ -1,0 +1,111 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate magnetomotive’ button.",
+     "H1": "magnetomotive force converter online",
+     "META": "Convert magnetomotive force strength from one unit to another by using our free online magnetomotive force converter tool in an easy way.",
+     "TITLE": "Magnetomotive force converter- Use this tool online to convert magnetomotive force",
+     "keywords": "magnetomotive force converter",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/magnetic-field-strength-converter",
+                              "name": "magnetic-field-strength converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/magnetic-flux-converter",
+                              "name": "magnetic-flux converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/magnetic-flux-density-converter",
+                              "name": "magnetic-flux-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/magnetomotive-force-converter",
+                              "name": "magnetomotive-force converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "option first",
+                    "labelId": "option1__id",
+                    "inputBox": "text",
+                    "inputId": "option1",
+                    "inputName": "boxinput",
+                    "dropDown": "in",
+                    "dropDownId": "Box",
+                    "dropDownName": "boxmenu",
+                    "dateTimePicker": false
+               }
+          ],
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": "1",
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/guaranty.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/protect.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/support.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/bulb.svg",
+               "header": "",
+               "content": ""
+          }
+     ],
+     "FAQ": [
+          {
+               "question": "",
+               "answer": ""
+          }
+     ],
+     "jsfilepaths": [
+          "/js/magnetism/magnetomotive-force-converter.js",
+          "/js/converter.js"
+     ],
+     "cssfilepaths": [
+          "/css/style.css"
+     ]
+}

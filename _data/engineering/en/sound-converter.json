@@ -1,0 +1,146 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "META": "This online sound converter tool to makes it easy to convert your different unit of sound from one unit to another.",
+     "H1": "sound converter online",
+     "H2": "Enter your value in given tool and then click on the ‘calculate sound’ button.",
+     "TITLE": "Sound Converter - Convert any sound file to any other format with ease",
+     "keywords": "sound converter",
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "option first",
+                    "labelId": "option1__id",
+                    "inputBox": "text",
+                    "inputId": "option1",
+                    "inputName": "boxinput",
+                    "dropDown": "in",
+                    "dropDownId": "Box",
+                    "dropDownName": "boxmenu",
+                    "dateTimePicker": false
+               }
+          ],
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": "1",
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/guaranty.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/protect.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/support.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/bulb.svg",
+               "header": "",
+               "content": ""
+          }
+     ],
+     "FAQ": [
+          {
+               "question": "",
+               "answer": ""
+          }
+     ],
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/acceleration-converter",
+                              "name": "acceleration converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/angle-converter",
+                              "name": "angle converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/anguler-velocity-converter",
+                              "name": "anguler velocity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/density-converter",
+                              "name": "density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/force-converter",
+                              "name": "force converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/force-length-converter",
+                              "name": "force length converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/inertia-converter",
+                              "name": "inertia converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/pressure-converter",
+                              "name": "pressure converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/sound-converter",
+                              "name": "sound converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/torque-converter",
+                              "name": "torque converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/time-conversion",
+                              "name": "time-conversion",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "jsfilepaths": [
+          "/js/engineering/sound-converter.js",
+          "/js/converter.js"
+     ],
+     "cssfilepaths": [
+          "/css/style.css"
+     ]
+}

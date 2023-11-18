@@ -1,0 +1,141 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H1": "mass flux density converter online",
+     "H2": "Enter your value in given tool and then click on the ‘calculate mass flux density’ button.",
+     "TITLE": "Mass flux density converter - The best way to convert mass flux density",
+     "META": "Use this free online mass flux density converter to quickly and easily convert between different units of mass flux density with this handy online converter.",
+     "keywords": "mass flux density converter",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/concentration-molar-converter",
+                              "name": "concentration-molar converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/liquid-flow-converter",
+                              "name": "liquid-flow converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/mass-flow-converter",
+                              "name": "mass-flow converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/mass-flux-density-converter",
+                              "name": "mass-flux-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/molar-flow-converter",
+                              "name": "molar-flow converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/permeability-converter",
+                              "name": "permeability converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/solution-concentration-converter",
+                              "name": "solution-concentration converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/surface-tension-converter",
+                              "name": "surface-tension converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/viscosity-dynamic-converter",
+                              "name": "viscosity-dynamic converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/viscosity-kinematic-converter",
+                              "name": "viscosity-kinematic converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "option first",
+                    "labelId": "option1__id",
+                    "inputBox": "text",
+                    "inputId": "option1",
+                    "inputName": "boxinput",
+                    "dropDown": "in",
+                    "dropDownId": "Box",
+                    "dropDownName": "boxmenu",
+                    "dateTimePicker": false
+               }
+          ],
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": "1",
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/guaranty.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/protect.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/support.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/bulb.svg",
+               "header": "",
+               "content": ""
+          }
+     ],
+     "FAQ": [
+          {
+               "question": "",
+               "answer": ""
+          }
+     ],
+     "jsfilepaths": [
+          "/js/fluids/mass-flux-density-converter.js",
+          "/js/converter.js"
+     ],
+     "cssfilepaths": [
+          "/css/style.css"
+     ]
+}

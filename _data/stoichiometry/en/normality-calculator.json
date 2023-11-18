@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Make Your Chemistry Studies More Accurate With Our Calculator",
+    "H1": "Calculate Chemical Concentrations Easily with Normality Calculator",
+    "META": "Calculations of chemical concentration are simplified using our Normality Calculator. Easily achieve accuracy in your chemistry studies and experiments.",
+    "TITLE": "Normality Calculator | Simplify Calculations for Chemistry",
+    "keywords": "Normality calculator",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Mass of solute(m)",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "dropDown": "g",
+          "dropDownId": "inputdrop1",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Equivalent weight of solute(E)",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "dropDown": "eq/g",
+          "dropDownId": "inputdrop2",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Volume of solution (S)",
+          "labelId": "option3__id",
+          "inputBox": "text",
+          "inputId": "input3",
+          "dropDown": "l",
+          "dropDownId": "inputdrop3",
+          "dateTimePicker": false
+        }
+        ,
+        {
+          "labelName": "Normality(N)",
+          "labelId": "option4__id",
+          "dropDown": "l",
+          "dropDownId": "inputdrop4",
+          "dateTimePicker": false
+        }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/Stoichiometry calculators/normality-calculator.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }
+

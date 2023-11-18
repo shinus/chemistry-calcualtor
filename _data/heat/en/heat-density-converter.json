@@ -1,0 +1,150 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate heat density’ button.",
+     "H1": "heat density converter online",
+     "META": "Use this free online heat density converter to find the heat density of any material with this handy online converter.",
+     "TITLE": "Heat density converter- Use this tool online to convert heat density",
+     "keywords": "heat density converter",
+     "color": "#000",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/fuel-efficiency-mass-converter",
+                              "name": "fuel-efficiency-mass converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-volume-converter",
+                              "name": "fuel-efficiency-volume converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-density-converter",
+                              "name": "heat-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-flux-density-converter",
+                              "name": "heat-flux-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-transfer-coefficien-converter",
+                              "name": "heat-transfer-coefficien converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/specific-heat-capacity-converter",
+                              "name": "specific-heat-capacity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/temperature-converter",
+                              "name": "temperature converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-conductivity-converter",
+                              "name": "thermal-conductivity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-expansion-converter",
+                              "name": "thermal-expansion converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-resistance-converter",
+                              "name": "thermal-resistance converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-conversion",
+                              "name": "fuel-efficiency-conversion",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "FAQ": [],
+     "jsfilepaths": [
+          "/assets/js/heat-capacity-conversion.js"
+     ],
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/lightbulb.svg",
+               "header": "No cost to use",
+               "content": " Use this free online heat density converter tool to complete unit conversion for you without being charged any amount. You don't have to worry about paying anything to use this tool an endless number of times for free."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/target.svg",
+               "header": "Cloud based tool",
+               "content": "This is a cloud-based heat density converter tool which means it performs the calculations online. Being a cloud-based product, our tool can be accessed from any part of the world, anytime. You can access it from any device with an active internet connection."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cross.svg",
+               "header": "No-software installation",
+               "content": "Our heat capacity unit converter is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/shield.svg",
+               "header": "Time saving conversions",
+               "content": "Because our heat capacity unit converter uses cloud computing, our web tool has extremely quick processing times, allowing users to see findings as soon as possible. We have optimized our servers to speed up conversions and save consumers time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/fast.svg",
+               "header": "Accurate Results",
+               "content": "Our heat density converter tool strives to provide users with the most accurate answers. It has been tested several times and the results are accurate every time the tool is used. Providing accurate results helped us build trust in our user base."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cloud_new.svg",
+               "header": "Supports numerous units",
+               "content": "Numerous units are supported by our online heat density converter tool. Users can select the unit they want to convert from or into from a large selection. Several of the available units include Joule/Gram C, Joule/Kilogram C, etc."
+          }
+     ],
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "Enter Value:",
+                    "labelId": "Height__id",
+                    "inputBox": "text",
+                    "inputId": "from1"
+               },
+               {
+                    "labelName": "Convert From :",
+                    "labelId": "Height__id",
+                    "dropDown": "ft",
+                    "dropDownId": "from",
+                    "dateTimePicker": false
+               },
+               {
+                    "labelName": "Convert To :",
+                    "labelId": "Weight__id",
+                    "dropDown": "lb",
+                    "dropDownId": "to",
+                    "dateTimePicker": false
+               }
+          ],
+          "ButtonValue": "Convert",
+          "ButtonId": "calcBtn",
+          "ButtonType": "submit",
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     }
+}

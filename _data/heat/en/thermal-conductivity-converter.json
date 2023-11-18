@@ -1,0 +1,150 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate thermal conductivity’ button.",
+     "H1": "thermal conductivity converter online",
+     "META": "Use this free online thermal conductivity converter to find the thermal conductivity of any material with this handy online converter.",
+     "TITLE": "Thermal conductivity converter - The best way to convert thermal conductivity units",
+     "keywords": "thermal conductivity converter",
+     "color": "#000",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/fuel-efficiency-mass-converter",
+                              "name": "fuel-efficiency-mass converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-volume-converter",
+                              "name": "fuel-efficiency-volume converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-density-converter",
+                              "name": "heat-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-flux-density-converter",
+                              "name": "heat-flux-density converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/heat-transfer-coefficien-converter",
+                              "name": "heat-transfer-coefficien converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/specific-heat-capacity-converter",
+                              "name": "specific-heat-capacity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/temperature-converter",
+                              "name": "temperature converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-conductivity-converter",
+                              "name": "thermal-conductivity converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-expansion-converter",
+                              "name": "thermal-expansion converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/thermal-resistance-converter",
+                              "name": "thermal-resistance converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/fuel-efficiency-conversion",
+                              "name": "fuel-efficiency-conversion",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "FAQ": [],
+     "jsfilepaths": [
+          "/assets/js/thermal-conductivity-conversion.js"
+     ],
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/lightbulb.svg",
+               "header": "Free to use",
+               "content": "Use this free online thermal conductivity unit conversion tool, that does this thing for you without asking you to pay any fees. You can use this tool for free infinite times and not worry about paying a single dime."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/target.svg",
+               "header": "Web-based tool",
+               "content": "Because this thermal conductivity unit conversion tool is web-based, the calculations are done online on our server. Since it is a web-based solution, anyone anywhere in the globe can use our tool at any time. Any device with a live internet connection can access it with no problem."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cross.svg",
+               "header": "No-software installation",
+               "content": "Our thermal conductivity unit conversion tool is completely online and does not require users to download any software to use our services. Users can easily use this tool online in their web browser. It saves time and hassle for users, as it becomes easily accessible at any time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/shield.svg",
+               "header": "Speedy conversions",
+               "content": "Our online thermal conductivity unit converter uses cloud computing, which has very quick processing speeds, allowing users to see findings as soon as possible. Our servers have been optimised to speed up conversions for users, saving them time."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/fast.svg",
+               "header": "Precise results ",
+               "content": "In order to give users the most precise answers, our technology works hard. The tool has undergone numerous tests, and each time, the results are pricise. We were able to gain our user base's trust by delivering accurate results."
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/images/cloud_new.svg",
+               "header": "Multiple unit support",
+               "content": "Our online thermal conductivity unit converter supports a lot of units. Users can choose from a wide variety of units that they want to convert or convert to. Some of the units available are Watt/Centimeter-C, Watt/Meter-K, etc."
+          }
+     ],
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "Enter Value:",
+                    "labelId": "Height__id",
+                    "inputBox": "text",
+                    "inputId": "from1"
+               },
+               {
+                    "labelName": "Convert From :",
+                    "labelId": "Height__id",
+                    "dropDown": "ft",
+                    "dropDownId": "from",
+                    "dateTimePicker": false
+               },
+               {
+                    "labelName": "Convert To :",
+                    "labelId": "Weight__id",
+                    "dropDown": "lb",
+                    "dropDownId": "to",
+                    "dateTimePicker": false
+               }
+          ],
+          "ButtonValue": "Convert",
+          "ButtonId": "calcBtn",
+          "ButtonType": "submit",
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     }
+}

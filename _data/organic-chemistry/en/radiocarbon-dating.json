@@ -1,0 +1,140 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "An Important Tool for Environmental Science and Archaeology",
+    "H1": "Calculate Radiocarbon Ages and Dates Accurately Online",
+    "META": "To precisely calculate radiocarbon ages and dates, use our radiocarbon calculator. a vital tool for archaeology and environmental science.",
+    "TITLE": "Radiocarbon Calculator | Determine Radiocarbon Ages and Dates ",
+    "keywords": "Radiocarbon Dating Calculator Carbon 14 Dating",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Percent C-14 remaining",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Half life(years)",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "dateTimePicker": false
+        }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/organic-chemistry/radiocarbon-dating.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }
+  

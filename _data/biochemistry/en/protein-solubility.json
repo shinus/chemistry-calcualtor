@@ -1,0 +1,160 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Utilize Our Reliable Calculator to Simplify Solubility Predictions",
+    "H1": "Calculate Protein Solubility to Improve Your Protein Solutions",
+    "META": "Our Protein Solubility Calculator can help you reach the ideal protein solubility. Find out your predicted solubility immediately.",
+    "TITLE": "Protein Solubility Calculator | Optimize Your Protein Solutions",
+    "keywords": "Protein Solubility Calculator",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+            "labelName": "Blank titer (B)",
+            "labelId": "option1__id",
+            "inputBox": "text",
+            "inputId": "input1",
+            "dateTimePicker": false
+          },
+          {
+            "labelName": "Titer (T)",
+            "labelId": "option2__id",
+            "inputBox": "text",
+            "inputId": "input2",
+            "dateTimePicker": false
+          }
+          ,
+          {
+            "labelName": "Normality of NaOH (N)",
+            "labelId": "option3__id",
+            "inputBox": "text",
+            "inputId": "input3",
+            "dropDown": "g/L",
+            "dropDownId": "inputdrop3",
+            "dateTimePicker": false
+          }
+          ,
+          {
+            "labelName": "Effective weight(M)",
+            "labelId": "option4__id",
+            "inputBox": "text",
+            "inputId": "input4",
+            "dropDown": "g",
+            "dropDownId": "inputdrop4",
+            "dateTimePicker": false
+          }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/biochemistry/protein-solubility.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }
+  

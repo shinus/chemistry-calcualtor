@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Easy and Accurate Crystal Lattice Energies Calculation",
+    "H1": "Free Lattice Energy Calculator for Fast Energy Calculation",
+    "META": "Use our Lattice Energy Calculator to calculate crystal lattice energies. a crucial tool for chemists and materials scientists. Instantly get accurate findings.",
+    "TITLE": "Lattice Energy Calculator | Calculate Crystal Lattice Energies",
+    "keywords": "Lattice Energy Calculator",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+            "labelName": "Cation element and charge",
+            "labelId": "option1__id",
+            "dropDown": "V",
+            "dropDownId": "inputdrop1",
+            "inputBox": "text",
+            "inputId": "input1",
+            "dateTimePicker": false
+          },
+          {
+            "labelName": "Cation Atomic radius",
+            "labelId": "option2__id",
+            "inputBox": "text",
+            "inputId": "input2"
+          },
+          {
+            "labelName": "Anion element and charge",
+            "labelId": "anion charge",
+            "dropDown": "mV",
+            "dropDownId": "inputdrop3",
+            "inputId": "input3",
+            "inputBox": "text",
+            "dateTimePicker": false
+          },{
+            "labelName": "Anion Atomic radius",
+            "labelId": "anionradius",
+            "inputBox": "text",
+            "inputId": "input4"
+          },
+          {
+            "labelName": "Stoichiometry",
+            "labelId": "Stoichiometry",
+            "inputId": "inpu5",
+            "inputBox": "text",
+            "dateTimePicker": false
+          }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/electrochemistry/lattice-energy.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }

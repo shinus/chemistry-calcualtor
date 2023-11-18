@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Utilise our Calculator to quickly convert between molarity and percentage concentration. simplify computations in chemistry and science.",
+    "H1": "Calculator for Converting Percentage Concentration to Molarity ",
+    "H2": "Utilize Our Calculator to Simplify Conversion Between Concentration Units",
+    "TITLE": "Online Percentage Concentration to Molarity Calculator ",
+    "keywords": "buffer pH",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/area-converter",
+              "name": "area converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/fuel-converter",
+              "name": "fuel converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/length-converter",
+              "name": "length converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/prefix-converter",
+              "name": "prefix converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/speed-converter",
+              "name": "speed converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/volume-converter",
+              "name": "volume converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/weight-converter",
+              "name": "weight converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Solution",
+          "labelId": "option1__id",
+          "dropDown": "in",
+          "dropDownId": "inputdrop1",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Your molar mass:",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "inputName": "boxinput",
+          "dropDown": "in",
+          "dropDownId": "inputdrop2",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Density of solution",
+          "labelId": "option3__id",
+          "inputBox": "text",
+          "inputId": "input3",
+          "dropDown": "in",
+          "inputName": "boxinput",
+          "dropDownId": "inputdrop3",
+          "dropDownName": "boxmenu",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Percentage",
+          "labelId": "option4__id",
+          
+          "inputBox": "text",
+          "inputId": "input4",
+          "dateTimePicker": false
+        },
+        {
+            "labelName": "Molarity",
+            "labelId": "option5__id",
+            "dropDown": "in",
+            "dropDownId": "inputdrop5",
+            "dropDownName": "boxmenu",
+            "dateTimePicker": false
+        }
+      ],
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit",
+      "resultDiv": "true",
+      "resultDisplay": "none"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": ["/js/mixture-solution/percentage-concentration-to-molarity.js"],
+    "cssfilepaths": ["/css/style.css"]
+  }
+
+  

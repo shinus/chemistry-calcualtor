@@ -1,0 +1,136 @@
+{
+     "Language": "English",
+     "htmlLangAtt": "en",
+     "img": "/img/icon2.png",
+     "imgwidth": "35px",
+     "imgheight": "35px",
+     "imgalt": "music.png",
+     "H2": "Enter your value in given tool and then click on the ‘calculate cholestrol’ button.",
+     "H1": "cholesterol converter online",
+     "META": "Use this online our cholesterol converter tool to quickly and easily convert cholestrol level between different units of measure.",
+     "TITLE": "Cholesterol Converter - The quickest and easiest way to convert cholesterol",
+     "keywords": "cholesterol converter",
+     "megaMenu": {
+          "nav-link-name": "Tools",
+          "dropdown": [
+               {
+                    "categoryName": "paraphrasing tools",
+                    "links": [
+                         {
+                              "url": "/albumin-converter",
+                              "name": "albumin converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/calcium-converter",
+                              "name": "calcium converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/cholesterol-converter",
+                              "name": "cholesterol converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/creatinine-converter",
+                              "name": "creatinine converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/enzymes-converter",
+                              "name": "enzymes converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/ferritin-converter",
+                              "name": "ferritin converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/urea-converter",
+                              "name": "urea converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/haemoglobin-converter",
+                              "name": "haemoglobin converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         },
+                         {
+                              "url": "/glucose-converter",
+                              "name": "glucose converter",
+                              "iconSrc": "/assets/images/convert.png"
+                         }
+                    ]
+               }
+          ]
+     },
+     "calculatorData": {
+          "calculatorRow": [
+               {
+                    "labelName": "option first",
+                    "labelId": "option1__id",
+                    "inputBox": "text",
+                    "inputId": "option1",
+                    "inputName": "boxinput",
+                    "dropDown": "in",
+                    "dropDownId": "Box",
+                    "dropDownName": "boxmenu",
+                    "dateTimePicker": false
+               }
+          ],
+          "resultDiv": "true",
+          "resultDisplay": "none"
+     },
+     "TEXTUAL_CONTENT": [
+          {
+               "priority": "1",
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/guaranty.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/protect.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/support.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/easy.svg",
+               "header": "",
+               "content": ""
+          },
+          {
+               "priority": 1,
+               "logoUrl": "/assets/bulb.svg",
+               "header": "",
+               "content": ""
+          }
+     ],
+     "FAQ": [
+          {
+               "question": "",
+               "answer": ""
+          }
+     ],
+     "jsfilepaths": [
+          "/js/medical/cholesterol-converter.js",
+          "/js/converter.js"
+     ],
+     "cssfilepaths": [
+          "/css/style.css"
+     ]
+}

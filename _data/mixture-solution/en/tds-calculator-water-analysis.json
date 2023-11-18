@@ -1,0 +1,297 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "To accurately measure Total Dissolved Solids, use our TDS Calculator. Analyzing water quality should be made easier, and results should be accurate.",
+    "H1": "Find Total Dissolved Solids Measurement using the TDS Calculator",
+    "H2": "Utilize Our TDS Measurement Tool to Simplify Water Quality Analysis",
+    "TITLE": "TDS Calculator - Accurately Calculate Total Dissolved Solids",
+    "keywords": "Tds calculator",
+    "color": "#000",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/area-converter",
+                        "name": "area converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/fuel-converter",
+                        "name": "fuel converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/length-converter",
+                        "name": "length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/prefix-converter",
+                        "name": "prefix converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/speed-converter",
+                        "name": "speed converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/volume-converter",
+                        "name": "volume converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/weight-converter",
+                        "name": "weight converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/images/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "Free to use",
+            "content": "Our online area conversion tool is absolutely free to use with no hidden costs and provides unlimited usage every day. You don't need to pay us a single dime for using our services."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Fast and Efficient",
+            "content": "Our online area converter tool thrives to provide you with fast and efficient results so that you don't have to waste even a single second of your time. Get the results within a second of clicks."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "Accessible",
+            "content": "Our area converter tool is an online web-based program, which makes it super accessible from any corner of the world. You just need an active internet connection to use this tool. Use it on a PC, mobile or tablet."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Wide range of units",
+            "content": " We provide a wide range of area units that you can use to convert. Most of the common areas units like square feet, acres, or square inches can be used for a better understanding of the area."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Accurate and precise",
+            "content": "Converting one area unit into another can include complicated mathematical calculations, but our tool efficiently converts the area unit and provides precise conversions every time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Easy to use",
+            "content": "Our online area converter tool has a very user-friendly interface that lets users comfortably use the tool from the very beginning. Easy to understand and basic options that let you do the work easily."
+        }
+    ],
+    "jsfilepaths": [
+        "/js/mixture-solution/tds-calculator-water-analysis.js"
+    ],
+
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Chloride (Cl⁻)",
+                "labelId": "label1",
+                "inputBox": "text",
+                "inputId": "input1",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop1",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Phosphate (H₂PO₄⁻)",
+                "labelId": "label2",
+                "inputBox": "text",
+                "inputId": "input2",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop2",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Sulfite (SO₃²⁻)",
+                "labelId": "label3",
+                "inputBox": "text",
+                "inputId": "input3",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop3",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Sulfate (SO₄²⁻)",
+                "labelId": "label4",
+                "inputBox": "text",
+                "inputId": "input4",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop4",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Carbonate (CO₃²⁻)",
+                "labelId": "label5",
+                "inputBox": "text",
+                "inputId": "input5",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop5",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Bicarbonate (HCO₃³⁻)",
+                "labelId": "label6",
+                "inputBox": "text",
+                "inputId": "input6",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop6",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Fluoride (F⁻)",
+                "labelId": "label7",
+                "inputBox": "text",
+                "inputId": "input7",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop7",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Nitrite (NO₂⁻)",
+                "labelId": "label8",
+                "inputBox": "text",
+                "inputId": "input8",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop8",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Nitrate (NO₃⁻)",
+                "labelId": "label9",
+                "inputBox": "text",
+                "inputId": "input9",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop9",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Silicate (SiO₄⁴⁻)",
+                "labelId": "label10",
+                "inputBox": "text",
+                "inputId": "input10",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop10",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Sodium (Na⁺)",
+                "labelId": "label11",
+                "inputBox": "text",
+                "inputId": "input11",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop11",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Calcium (Ca²⁺)",
+                "labelId": "label12",
+                "inputBox": "text",
+                "inputId": "input12",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop12",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Magnesium (Mg²⁺)",
+                "labelId": "label13",
+                "inputBox": "text",
+                "inputId": "input13",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop13",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Iron (Fe²⁺)",
+                "labelId": "label14",
+                "inputBox": "text",
+                "inputId": "input14",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop14",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Barium (Ba²⁺)",
+                "labelId": "label15",
+                "inputBox": "text",
+                "inputId": "input15",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop15",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Potassium (K⁺)",
+                "labelId": "label16",
+                "inputBox": "text",
+                "inputId": "input16",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop16",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Strontium (Sr²⁺)",
+                "labelId": "label17",
+                "inputBox": "text",
+                "inputId": "input17",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop17",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Manganese (Mn²⁺)",
+                "labelId": "label18",
+                "inputBox": "text",
+                "inputId": "input18",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop18",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Aluminium (Al³⁺)",
+                "labelId": "label19",
+                "inputBox": "text",
+                "inputId": "input19",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop19",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Lithium (Li⁺)",
+                "labelId": "label20",
+                "inputBox": "text",
+                "inputId": "input20",
+                "dropDown": "mg/L",
+                "dropDownId": "inputdrop20",
+                "dateTimePicker": false
+            }
+
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

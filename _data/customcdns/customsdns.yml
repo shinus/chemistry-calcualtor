@@ -1,0 +1,6 @@
+cssfiles:         
+- <link rel="stylesheet" href="css/style.css">     
+
+jsfiles:         
+- <script src="filepath"></script>    
+- <script src="filepath"></script>

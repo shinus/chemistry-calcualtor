@@ -1,0 +1,161 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Convert volume charge density from one unit to another by using our free online volume charge density tool in an easy way.",
+    "H1": "Volume charge density converter online",
+    "H2": "Enter your value in given tool and then click on the ‘calculatevolume charge density’ button.",
+    "TITLE": "Volume Charge Density Converter - The easiest way to convert your units.",
+    "keywords": "volume charge density",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/capacitance-converter",
+                        "name": "capacitance converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/charge-converter",
+                        "name": "charge converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/conductance-converter",
+                        "name": "conductance converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/conductivity-converter",
+                        "name": "conductivity converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/current-converter",
+                        "name": "current converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/electric-field-strength-converter",
+                        "name": "electric field strength converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/inductance-converter",
+                        "name": "inductance converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/linear-charge-density-converter",
+                        "name": "linear charge density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/potential-converter",
+                        "name": "potential converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/resistance-converter",
+                        "name": "resistance converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/resistivity-converter",
+                        "name": "resistivity converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/surface-charge-density",
+                        "name": "surface charge density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/surface-current-density",
+                        "name": "surface current density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/volume-charge-density",
+                        "name": "volume charge density converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "option first",
+                "labelId": "option1__id",
+                "inputBox": "text",
+                "inputId": "option1",
+                "inputName": "boxinput",
+                "dropDown": "in",
+                "dropDownId": "Box",
+                "dropDownName": "boxmenu",
+                "dateTimePicker": false
+            }
+        ],
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": "1",
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/guaranty.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "FAQ": [
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "jsfilepaths": [
+        "/js/electricity/volume-charge-density.js",
+        "/js/converter.js"
+    ],
+    "cssfilepaths": [
+        "/css/style.css"
+    ]
+}

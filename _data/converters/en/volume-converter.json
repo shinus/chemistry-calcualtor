@@ -1,0 +1,130 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "META": "Use our volume converter to convert between the several common volume units, use our volume converter quickly and simply.",
+    "H1": "Free volume converter online",
+    "H2": "Enter your value in given tool and then click on the ‘calculate volume’ button.",
+    "TITLE": "Volume converter - Convert to and from various volume units easily and quickly.",
+    "keywords": "volume converter",
+    "color": "#000",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "paraphrasing tools",
+                "links": [
+                    {
+                        "url": "/area-converter",
+                        "name": "area converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/fuel-converter",
+                        "name": "fuel converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/length-converter",
+                        "name": "length converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/prefix-converter",
+                        "name": "prefix converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/speed-converter",
+                        "name": "speed converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/volume-converter",
+                        "name": "volume converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    },
+                    {
+                        "url": "/weight-converter",
+                        "name": "weight converter",
+                        "iconSrc": "/assets/images/convert.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/lightbulb.svg",
+            "header": "No charge included",
+            "content": "Our online volume conversion tool is absolutely free to use with no hidden costs and provides unlimited usage every day. You don't need to pay us a single dime for using our services."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "No Installation required",
+            "content": "You don't need to install any additional software for using our online volume converter. You can use our online tool to convert volume units easily."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "Cloud based",
+            "content": "Our online volume unit converter is based on cloud computing, which means it doesn't utilize your system processor and the calculation is done on the cloud, which makes the process much fast.            "
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "Highly precise results",
+            "content": "Since our volume conversion tool operates on cloud processes, we improved the precision of the tool. It can provide highly accurate and precise results every time."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "Wide range of Units",
+            "content": "Our online volume unit converter can operate on a vast variety of units. Some of the most commonly used units like cubic inch, gallon, liters, etc. Fast and easy conversion for every unit."
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "Fast processing",
+            "content": "Our volume unit conversion tool uses fast cloud operating processes which helps in providing the fastest results online. Just select the units and enter the value and with a click it will provide answers."
+        }
+    ],
+    "FAQ": [],
+    "jsfilepaths": [
+        "/assets/js/volume-conversion.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Enter Value:",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "from1"
+            },
+            {
+                "labelName": "Convert From :",
+                "labelId": "Height__id",
+                "dropDown": "ft",
+                "dropDownId": "from",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Convert To :",
+                "labelId": "Weight__id",
+                "dropDown": "lb",
+                "dropDownId": "to",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Convert",
+        "ButtonId": "calcBtn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

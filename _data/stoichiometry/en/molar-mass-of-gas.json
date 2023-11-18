@@ -1,0 +1,160 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "img": "/img/icon2.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "imgalt": "music.png",
+    "H2": "Utilize Our Calculator to Achieve Precision Gas Chemistry Studies",
+    "H1": "Simplify Molecular Mass Calculations With This Online Tool",
+    "META": "For accurate estimations of the molecular masses of gases, use our Molar Mass of Gas Calculator. With ease, simplify your chemistry lessons and experiments.",
+    "TITLE": "Molar Mass of Gas Calculator | Precise Molecular Mass Calculation",
+    "keywords": "Molar Mass of Gas calculator",
+    "megaMenu": {
+      "nav-link-name": "Tools",
+      "dropdown": [
+        {
+          "categoryName": "paraphrasing tools",
+          "links": [
+            {
+              "url": "/albumin-converter",
+              "name": "albumin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/calcium-converter",
+              "name": "calcium converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/cholesterol-converter",
+              "name": "cholesterol converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/creatinine-converter",
+              "name": "creatinine converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/enzymes-converter",
+              "name": "enzymes converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/ferritin-converter",
+              "name": "ferritin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/urea-converter",
+              "name": "urea converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/haemoglobin-converter",
+              "name": "haemoglobin converter",
+              "iconSrc": "/assets/images/convert.png"
+            },
+            {
+              "url": "/glucose-converter",
+              "name": "glucose converter",
+              "iconSrc": "/assets/images/convert.png"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatorData": {
+      "calculatorRow": [
+        {
+          "labelName": "Pressure",
+          "labelId": "option1__id",
+          "inputBox": "text",
+          "inputId": "input1",
+          "dropDown": "atm",
+          "dropDownId": "inputdrop1",
+          "dateTimePicker": false
+        },
+        {
+          "labelName": "Temperature",
+          "labelId": "option2__id",
+          "inputBox": "text",
+          "inputId": "input2",
+          "dropDown": "k",
+          "dropDownId": "inputdrop2",
+          "dateTimePicker": false
+        },
+        {
+            "labelName": "Volume",
+            "labelId": "option3__id",
+            "inputBox": "text",
+            "inputId": "input3",
+            "dropDown": "l",
+            "dropDownId": "inputdrop3",
+            "dateTimePicker": false
+        },{
+        "labelName": "Mass",
+          "labelId": "option4__id",
+          "inputBox": "text",
+          "inputId": "input4",
+          "dropDown": "mg",
+          "dropDownId": "inputdrop4",
+          "dateTimePicker": false
+        }
+      ],
+      "resultDiv": "true",
+      "resultDisplay": "none",
+      "ButtonValue": "Convert",
+      "ButtonId": "calcBtn",
+      "ButtonType": "submit"
+    },
+    "TEXTUAL_CONTENT": [
+      {
+        "priority": "1",
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/guaranty.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/protect.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/support.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/easy.svg",
+        "header": "",
+        "content": ""
+      },
+      {
+        "priority": 1,
+        "logoUrl": "/assets/bulb.svg",
+        "header": "",
+        "content": ""
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "jsfilepaths": [
+      "/js/Stoichiometry calculators/molar-mass-of-gas.js"
+    ],
+    "cssfilepaths": ["/css/style.css"]
+  }

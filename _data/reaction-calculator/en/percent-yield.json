@@ -1,0 +1,90 @@
+{
+    "H1": "Percent Yield Calculator",
+    "H2": "Enter your data to calculate gallons per minute",
+    "TITLE": "Percent Yield Calculator",
+    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "img": "/assets/images/swimming.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#9F0D7F",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/reaction-calculator/percent-yield.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Theoretical yield ",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "theoretical_input_id",
+                "unit": "grams (g)",
+                "dropDownId": "cth_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Actual yield",
+                "labelId": "rms__id",
+                "inputBox": "text",
+                "inputId": "actual_input_id",
+                "unit": "grams (g)",
+                "dropDownId": "condition_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}
