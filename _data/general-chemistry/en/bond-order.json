@@ -82,11 +82,11 @@
           "dateTimePicker": false
         }
       ],
-      "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -133,6 +133,7 @@
       }
     ],
     "jsfilepaths": [
+      "/js/util.js",
       "/js/general-chemistry/bond-order.js"
     ],
     "cssfilepaths": ["/css/style.css"]

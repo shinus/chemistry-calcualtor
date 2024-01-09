@@ -26,14 +26,42 @@ let inputdrop1 = document.getElementById("inputdrop1");
 let inputdrop3 = document.getElementById("inputdrop3");
 
 let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 let input4 = document.getElementById("input4");
+let input5 = document.getElementById("input5");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "cation", values: input1 },
+    { name: "element", values: inputdrop1 },
+    { name: "radius", values: input2 },
+    { name: "charge", values: input3 },
+    { name: "element2", values: inputdrop3 },
+    { name: "anion", values: input4 },
+    { name: "stoichemistry", values: input5 },
+];
+
+// calcBtn.style.background ='black'
+// Faraday's constant 
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init()
+
+calcBtn.addEventListener("click", showResult);
+// calcBtn.style.background = 'black';
 
 cationsArray.forEach((option) => {
     let opt = document.createElement("option");
@@ -65,7 +93,7 @@ inputdrop3.addEventListener('change', () => {
     }
 });
 
-function calculate() {
+function getExact() {
     const cationCharge = Math.abs(parseFloat(input1.value)); // Use absolute value of charge
     const anionCharge = Math.abs(parseFloat(input3.value)); // Use absolute value of charge
 
@@ -86,10 +114,33 @@ function calculate() {
 
         latticeEnergy  = latticeEnergy /2 
 
-        result.textContent = `Lattice Energy: ${latticeEnergy.toFixed(2)} J/mol`;
+        result = latticeEnergy ;
     } else {
-        result.textContent = "Please enter valid charges for the cation and anion.";
+        result = "Please enter valid charges for the cation and anion.";
     }
+     return result
+}
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = getExact();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>Lattice Energy:  " + result.toFixed(2) + " J/mol </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+    output.append(div4);
 }
 
 // Helper function to find the greatest common divisor of two numbers

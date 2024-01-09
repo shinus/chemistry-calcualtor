@@ -18,11 +18,30 @@ const inputdrop1 = document.getElementById("inputdrop1");
 const inputdrop2 = document.getElementById("inputdrop2");
 const inputdrop3 = document.getElementById("inputdrop3");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.style.background = "black";
-calcBtn.addEventListener("click", calculateReactionRate);
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "constant", values: input1 },
+    { name: "speed", values: input2 },
+    { name: "substrate", values: input3 },
+];
+
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+  }
+}
+
+init()
+
+// calcBtn.style.background = "black";
+calcBtn.addEventListener("click", showResult);
 
 
 dropMolar.forEach((option) => {
@@ -44,7 +63,7 @@ timeunit.forEach((option) => {
     inputdrop2.value = "s";
   });
 
-function calculateReactionRate() {
+function getExact() {
     const km = parseFloat(input1.value);
     const kmunit = inputdrop1.value;
     const vmax = parseFloat(input2.value);
@@ -57,7 +76,26 @@ function calculateReactionRate() {
     }
 
     const reactionRate = (vmax * substrateConcentration) / (convertToStandardUnit(km,kmunit) + convertToStandardUnit(substrateConcentration,substrateunit));
-    result.textContent = `${reactionRate.toFixed(3)} sec`;
+    result = reactionRate;
+    return result
+}
+
+function showResult() {
+  if (event && event.type == "click") {
+      reloadPage(queryParams);
+      return;
+  }
+  var result = getExact();
+
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>Reaction rate (V)  " + result.toFixed(2)  +  " Sec </b>";
+
+  output.append(div1);
+  output.append(div2);
 }
 
 function convertToStandardUnit(value, unit) {

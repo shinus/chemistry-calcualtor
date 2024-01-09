@@ -69,11 +69,11 @@
       "calculatorRow": [
         
       ],
-      "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -120,6 +120,7 @@
       }
     ],
     "jsfilepaths": [
+      "/js/util.js",
       "/js/general-chemistry/average-atomic-mass.js"
     ],
     "cssfilepaths": ["/css/style.css"]

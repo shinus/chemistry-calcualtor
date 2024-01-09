@@ -80,34 +80,33 @@
     }
   ],
   "FAQ": [],
-  "jsfilepaths": [
-    "/assets/js/data-storage-conversion.js"
-  ],
+  "jsfilepaths": ["js/computer/data-storage.js", "js/util.js"],
   "calculatorData": {
     "calculatorRow": [
       {
         "labelName": "Enter Value:",
-        "labelId": "Height__id",
+        "labelId": "rms__id",
         "inputBox": "text",
-        "inputId": "from1"
+        "inputId": "value_input_id",
+        "dateTimePicker": false
       },
       {
         "labelName": "Convert From :",
-        "labelId": "Height__id",
+        "labelId": "rms__id",
         "dropDown": "ft",
-        "dropDownId": "from",
+        "dropDownId": "from_dd_id",
         "dateTimePicker": false
       },
       {
         "labelName": "Convert To :",
-        "labelId": "Weight__id",
-        "dropDown": "lb",
-        "dropDownId": "to",
+        "labelId": "rms__id",
+        "dropDown": "aa",
+        "dropDownId": "to_dd_id",
         "dateTimePicker": false
       }
     ],
-    "ButtonValue": "Convert",
-    "ButtonId": "calcBtn",
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
     "ButtonType": "submit",
     "resultDiv": "true",
     "resultDisplay": "none"

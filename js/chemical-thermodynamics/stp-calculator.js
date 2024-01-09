@@ -48,8 +48,8 @@ function showResult() {
 
     output.innerHTML = "";
 
-    div1.innerHTML = "<b>Volume  " + result.toFixed(3) + "   Liters (l) </b>";
-    div2.innerHTML = "<b>No. of moles  " + result2.toFixed(3) + "  </b>";
+    div1.innerHTML = "<b> Volume  " + result.toFixed(3) + "   Liters (l) </b>";
+    div2.innerHTML = "<b> No. of moles  " + result2.toFixed(3) + "  </b>";
 
     output.append(div1);
     output.append(div2);

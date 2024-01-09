@@ -14,23 +14,40 @@ let ionicof5 = document.getElementById('input9')
 let chargenumof5 = document.getElementById('input10')
 
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black'
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-// Array to store ion inputs
-let ionInputs = [];
+var queryParams = [
+    { name: "ion1", values: ionicof1 },
+    { name: "charge1", values: chargenumof1 },
+    { name: "ion2", values: ionicof2 },
+    { name: "charge2", values: chargenumof2 },
+    { name: "ion3", values: ionicof3 },
+    { name: "charge3", values: chargenumof3 },
+    { name: "ion4", values: ionicof4 },
+    { name: "charge4", values: chargenumof4 },
+    { name: "ion5", values: ionicof5 },
+    { name: "charge5", values: chargenumof5 },
+];
 
-// Function to add ion inputs to the array
-function addIonInput(ionicInput, chargeInput) {
-    ionInputs.push({
-        ionicInput: ionicInput,
-        chargeInput: chargeInput
-    });
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
+init()
+
+calcBtn.addEventListener("click", showResult);
+
+function getExact() {
+    let totalIonicStrength = 0;
+    let ionInputs = [];
 // Add ion inputs to the array
 addIonInput(ionicof1, chargenumof1);
 addIonInput(ionicof2, chargenumof2);
@@ -38,12 +55,12 @@ addIonInput(ionicof3, chargenumof3);
 addIonInput(ionicof4, chargenumof4);
 addIonInput(ionicof5, chargenumof5);
 
-
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
-
-function calculate() {
-    let totalIonicStrength = 0;
+function addIonInput(ionicInput, chargeInput) {
+    ionInputs.push({
+        ionicInput: ionicInput,
+        chargeInput: chargeInput
+    });
+}
 
     // Calculate the ionic strength for each ion input
     for (let i = 0; i < ionInputs.length; i++) {
@@ -60,7 +77,30 @@ function calculate() {
     totalIonicStrength /= 2;
 
     // Display the result or use it for further calculations
-    result.innerText = "Total Ionic Strength: " + totalIonicStrength;
+    result =  totalIonicStrength;
+    return result
+}
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = getExact();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>Total Ionic Strength:  " + result.toFixed(2) + " mol/L or " + result.toFixed(2) + " mol/kg. </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+    output.append(div4);
 }
 
 

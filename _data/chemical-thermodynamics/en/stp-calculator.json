@@ -1,8 +1,8 @@
 {
-    "H1": "STP Calculator (Standard Temperature and Pressure)",
-    "H2": "Enter your data to calculate gallons per minute",
-    "TITLE": "STP Calculator (Standard Temperature and Pressure)",
-    "META": "Efficiently Determine Flow Rate with Our GPM Calculator. Accurately Convert Gallons per Minute for Streamlined Fluid Dynamics Calculations.",
+    "H1": "Instantly calculate the volume of STP",
+    "H2": "Click the below button to get instant calculations ",
+    "TITLE": "STP Calculator: Calculate Gas Volume at Standard Conditions",
+    "META": "Calculate gas volume at standard temperature and pressure (STP) with our STP Calculator. Analyze gas behavior accurately under standard conditions.",
     "img": "/assets/images/swimming.png",
     "imgwidth": "35px",
     "imgheight": "35px",

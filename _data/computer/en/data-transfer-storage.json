@@ -43,6 +43,7 @@
   },
   "FAQ": [],
   "jsfilepaths": [
+    "/js/util.js",
     "/assets/js/data-transfer-conversion.js"
   ],
   "TEXTUAL_CONTENT": [
@@ -106,8 +107,8 @@
         "dateTimePicker": false
       }
     ],
-    "ButtonValue": "Convert",
-    "ButtonId": "calcBtn",
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
     "ButtonType": "submit",
     "resultDiv": "true",
     "resultDisplay": "none"

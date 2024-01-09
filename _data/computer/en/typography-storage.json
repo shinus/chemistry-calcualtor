@@ -54,6 +54,9 @@
         "dateTimePicker": false
       }
     ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
     "resultDiv": "true",
     "resultDisplay": "none"
   },

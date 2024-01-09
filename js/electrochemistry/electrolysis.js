@@ -1,6 +1,6 @@
 // Select elements 
-const massInput = document.getElementById('mass'); 
-massInput.placeholder = "Enter mass in g";
+// const massInput = document.getElementById('mass'); 
+// massInput.placeholder = "Enter mass in g";
 
 const equivalentInput = document.getElementById('equivalent');
 equivalentInput.placeholder = "Enter equivalent in C/mol";
@@ -10,39 +10,70 @@ currentInput.placeholder = "Enter current in A";
 
 const timeInput = document.getElementById('time');
 timeInput.placeholder = "Enter time in s";
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.style.background ='black'
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    // { name: "mass", values: massInput },
+    { name: "equivalent", values: equivalentInput },
+    { name: "current", values: currentInput },
+    { name: "time", values: timeInput },
+];
+
+// calcBtn.style.background ='black'
 // Faraday's constant 
-const FARADAY = 96485; 
 
-calcBtn.addEventListener('click', () => {
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
 
-  // Get input values
-  const mass = parseFloat(massInput.value);
+init()
+
+calcBtn.addEventListener("click", showResult);
+
+
+function getExact() {
+  const FARADAY = 96485; 
+  // const mass = parseFloat(massInput.value);
   const equivalent = parseFloat(equivalentInput.value);
   const current = parseFloat(currentInput.value);
   const time = parseFloat(timeInput.value);
 
   // Calculate missing value
-  let missing;
-  if(!mass) {
     missing = (equivalent * current * time) / FARADAY;
-  } else if(!equivalent) {
-    missing = (mass * FARADAY) / (current * time);
-  } else if(!current) {
-    missing = (mass * FARADAY) / (equivalent * time);
-  } else if(!time) {
-    missing = (mass * FARADAY) / (equivalent * current);
-  }
-
+ 
+  var result = 0;
   // Display result
-  result.textContent = `
-  Mass: ${mass || missing} 
-  Equivalent: ${equivalent || missing}
-  Current: ${current || missing}
-  Time: ${time || missing}
-  `;
+  result =  missing 
 
-});
+  return result
+}
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = getExact();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>mass  " + result.toFixed(2) + " V </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+    output.append(div4);
+}

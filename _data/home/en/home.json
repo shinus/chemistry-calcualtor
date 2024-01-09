@@ -149,6 +149,12 @@
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/organic-chemistry-calculators"
+    },{
+      "name": "Online chemical thermodynamics",
+      "description": "online chemical thermodynamics calculators",
+      "color": "#fa980b",
+      "icon": "/img/home-icon.svg",
+      "url": "/chemical-thermodynamics"
     }
   ]
 }

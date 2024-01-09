@@ -106,11 +106,11 @@
             "dateTimePicker": false
           }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -157,6 +157,7 @@
       }
     ],
     "jsfilepaths": [
+      "/js/util.js",
       "/js/electrochemistry/nernst-equation.js"
     ],
     "cssfilepaths": ["/css/style.css"]

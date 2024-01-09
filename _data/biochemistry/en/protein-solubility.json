@@ -87,7 +87,7 @@
             "labelId": "option3__id",
             "inputBox": "text",
             "inputId": "input3",
-            "dropDown": "g/L",
+            "unit": "grams per liter (g/L)",
             "dropDownId": "inputdrop3",
             "dateTimePicker": false
           }
@@ -97,16 +97,16 @@
             "labelId": "option4__id",
             "inputBox": "text",
             "inputId": "input4",
-            "dropDown": "g",
+            "unit": "grams",
             "dropDownId": "inputdrop4",
             "dateTimePicker": false
           }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -153,6 +153,7 @@
       }
     ],
     "jsfilepaths": [
+      "/js/util.js",
       "/js/biochemistry/protein-solubility.js"
     ],
     "cssfilepaths": ["/css/style.css"]

@@ -1,144 +1,257 @@
-let form = document.createElement("form");
-form.setAttribute("id","calculator_form1");
-form.setAttribute("name","calculator_form1");
+var valuess = document.getElementById("value_input_id");
+var fromss = document.getElementById("from_dd_id");
+var toss = document.getElementById("to_dd_id");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-let row = document.createElement("div")
-row.setAttribute("class","row")
-row.setAttribute("id","calculator-row-2");
-let col1 = document.createElement("div");
-col1.setAttribute("class","col-md-12")
-let col2 = document.createElement("div");
-col2.setAttribute("class","col-md-12")
-let neer = document.createElement("div");
-neer.setAttribute("class","d-flex calculator-inputs");
-let label = document.createElement("label");
-label.setAttribute("for","option1__id");
-label.innerHTML = "option second";
-let input = document.createElement("input");
-input.setAttribute("type","text");
-input.setAttribute("class","form-control");
-input.setAttribute("name","boxinput");
-input.setAttribute("id","option2");
-let select = document.createElement("select");
-select.setAttribute("class","form-control");
-select.setAttribute("name","boxmenu");
-select.setAttribute("id","Box2");
-neer.appendChild(input)
-neer.appendChild(select)
-col1.appendChild(label);
-col2.appendChild(neer);
-row.appendChild(col1);
-row.appendChild(col2);
-form.appendChild(row);
-function insertAfter(newNode, existingNode) {
-  existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-}
-let query = document.querySelector(".row.w-100.mx-auto");
-insertAfter(form,  query.lastElementChild);
-//precision 
-let apre = document.createElement("div");
-apre.setAttribute("id","calculator-row-3")
-apre.setAttribute("class","row")
-insertAfter(apre,  form.lastElementChild);
-let acol1 = document.createElement("div");
-acol1.setAttribute("class","col-md-12");
-let acol2 = document.createElement("div");
-acol2.setAttribute("class","col-md-12");
-let alabel = document.createElement("label");
-alabel.setAttribute("for","precision__id");
-alabel.innerHTML = "precision";
-acol1.appendChild(alabel);
-let prediv = document.createElement("div");
-prediv.setAttribute("class","d-flex calculator-inputs");
-let ainput = document.createElement("select");
-ainput.setAttribute("class","form-control");
-ainput.setAttribute("name","precision");
-ainput.setAttribute("id","precision");
-var pitchNames = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let e = 0; e < pitchNames.length; e++) {
-  let option = document.createElement("option")
-    option.value = pitchNames[e];
-    option.text = pitchNames[e];
-    ainput.appendChild(option);
-}
-prediv.appendChild(ainput)
-acol2.appendChild(prediv)
-apre.appendChild(acol1)
-apre.appendChild(acol2)
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-var Box = document.getElementById("Box");
-var Box2 = document.getElementById("Box2");
-var option1 = document.getElementById("option1");
-var option2 = document.getElementById("option2");
-var precision = document.getElementById("precision");
-
-
-
-var preBox = Box.value;
-var preBox2 = Box2.value;
-var property = "data";
-
-var box = [
-  "bit (b)",
-  "nibble",
-  "byte (B)",
-  "character",
-  "word",
-  "MAPM-word",
-  "quadruple-word",
-  "block",
-  "kilobit (kb)",
-  "kilobyte (kB)",
-  "megabit (Mb)",
-  "megabyte (MB)",
-  "gigabit (Gb)",
-  "gigabyte (GB)",
-  "terabit (Tb)",
-  "terabyte (TB)",
-  "petabit (Pb)",
-  "petabyte (PB)",
-  "exabit (Eb)",
-  "exabyte (EB)"
-];
-var fact = [
-  1,
-  4,
-  8,
-  8,
-  16,
-  32,
-  64,
-  4096,
-  1024,
-  8192,
-  1048218,
-  8403361,
-  1073741824,
-  8589934594,
-  1099511627743,
-  8796093023880,
-  1125899906842780,
-  9007199251699900,
-  1.15292150459143e18,
-  9.22337204098499e18
+var queryParams = [
+  { name: "value", values: valuess },
+  { name: "from", values: fromss },
+  { name: "to", values: toss },
 ];
 
-option2.value = 10
-option1.value = 1;
+var ftUnit = [
+  {
+    name: "bit (b)",
+    value: 0,
+  },
+  {
+    name: "byte (B)",
+    value: 1,
+  },
+  {
+    name: "kilobit (kb)",
+    value: 2,
+  },
+  {
+    name: "kilobyte (kB)",
+    value: 3,
+  },
+  {
+    name: "megabit (Mb)",
+    value: 4,
+  },
+  {
+    name: "megabyte (MB)",
+    value: 5,
+  },
+  {
+    name: "gigabit (Gb)",
+    value: 6,
+  },
+  {
+    name: "gigabyte (GB)",
+    value: 7,
+  },
+];
 
-function createDropDownForUnits(arr, element) {
+var toUnit = [
+  {
+    name: "terabit (Tb)",
+    value: 8,
+  },
+  {
+    name: "terabyte (TB)",
+    value: 9,
+  },
+  {
+    name: "petabit (Pb)",
+    value: 10,
+  },
+  {
+    name: "petabyte (PB)",
+    value: 11,
+  },
+  {
+    name: "exabit (Eb)",
+    value: 12,
+  },
+  {
+    name: "exabyte (EB)",
+    value: 13,
+  },
+];
+
+function createDropDown(arr, element) {
   element.innerHTML = "";
   for (var i = 0; i < arr.length; i++) {
     var option = document.createElement("option");
-
-    option.value = arr[i].values;
     option.text = arr[i].name;
+    option.value = arr[i].value;
     element.appendChild(option);
   }
 }
-function init() {
-  
-  createDropDownForUnits(box, Box);
-  createDropDownForUnits(fact, Box2);
+
+function setParamValues(queryParams) {
+  const params = new URLSearchParams(window.location.search);
+  for (queryP of queryParams) {
+    var parameter_value = params.get(queryP.name);
+    if (queryP.values.tagName == "INPUT") {
+      queryP.values.value = parameter_value;
+    } else if (queryP.values.tagName == "SELECT") {
+      queryP.values.selectedIndex = parameter_value;
+    }
+  }
 }
+
+function init() {
+  valuess.value = 100;
+  createDropDown(ftUnit, fromss);
+  createDropDown(toUnit, toss);
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+}
+
 init();
+
+function getSelectedValue(element) {
+  var value = element.options[element.selectedIndex].value;
+  return value;
+}
+
+function getExact() {
+  var valu = Number(valuess.value);
+  var fr = Number(getSelectedValue(fromss));
+  var tt = Number(getSelectedValue(toss));
+  var result = 0;
+
+  if (fr == 0 && tt == 8) {
+    result = valu * (1 / Math.pow(10, 12));
+  } else if (fr == 0 && tt == 9) {
+    result = valu * (1 / (8 * Math.pow(1024, 4)));
+  } else if ((fr == 0 && tt == 10) || (fr == 2 && tt == 8)) {
+    result = valu * (1 / Math.pow(10, 15));
+  } else if (fr == 0 && tt == 11) {
+    result = valu * (1 / (8 * Math.pow(1024, 5)));
+  } else if ((fr == 0 && tt == 12) || (fr == 2 && tt == 10)) {
+    result = valu * (1 / Math.pow(10, 18));
+  } else if (fr == 0 && tt == 13) {
+    result = valu * (1 / (8 * Math.pow(1024, 6)));
+  } else if (fr == 1 && tt == 8) {
+    result = valu * (1 / (8 * Math.pow(10, 12)));
+  } else if ((fr == 1 && tt == 9) || (fr == 2 && tt == 11)) {
+    result = valu * (1 / Math.pow(1024, 4));
+  } else if (fr == 1 && tt == 10) {
+    result = valu * (1 / (8 * Math.pow(10, 15)));
+  } else if ((fr == 1 && tt == 11) || (fr == 2 && tt == 13)) {
+    result = valu * (1 / Math.pow(1024, 5));
+  } else if (fr == 1 && tt == 12) {
+    result = valu * (1 / (8 * Math.pow(10, 18)));
+  } else if (fr == 1 && tt == 13) {
+    result = valu * (1 / Math.pow(1024, 6));
+  } else if (fr == 2 && tt == 9) {
+    result = valu * (1 / (64 * Math.pow(10, 21)));
+  } else if (fr == 2 && tt == 11) {
+    result = valu * (1 / (64 * Math.pow(10, 24)));
+  } else if (fr == 2 && tt == 12) {
+    result = valu * (1 / Math.pow(10, 21));
+  } else if (fr == 2 && tt == 13) {
+    result = valu * (1 / (64 * Math.pow(10, 27)));
+  } else if (fr == 3 && tt == 8) {
+    result =
+      valu * (8 * Math.pow(10, -9) * Math.pow(10, -3) * Math.pow(10, -3));
+  } else if (fr == 3 && tt == 9) {
+    result = valu * (1 / Math.pow(1024, 3));
+  } else if (fr == 3 && tt == 10) {
+    result =
+      valu *
+      (8 *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3));
+  } else if (fr == 3 && tt == 12) {
+    result =
+      valu *
+      (8 *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3) *
+        Math.pow(10, -3));
+  } else if (fr == 4 && tt == 8) {
+    result = valu * (Math.pow(10, -3) * Math.pow(10, -3));
+  } else if (fr == 4 && tt == 9) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * Math.pow(1024, 2)));
+  } else if (fr == 4 && tt == 10) {
+    result = valu * (Math.pow(10, 6) * Math.pow(10, 3) * Math.pow(10, -15));
+  } else if (fr == 4 && tt == 11) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * Math.pow(1024, 3)));
+  } else if (fr == 4 && tt == 12) {
+    result = valu * (Math.pow(10, 6) * Math.pow(10, 3) * Math.pow(10, -18));
+  } else if (fr == 4 && tt == 13) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * Math.pow(1024, 4)));
+  } else if (fr == 5 && tt == 8) {
+    result = valu * (8 * Math.pow(10, -3) * Math.pow(10, -3));
+  } else if (fr == 5 && tt == 9) {
+    result = valu * (1 / Math.pow(1024, 2));
+  } else if (fr == 5 && tt == 10) {
+    result = valu * (8 * Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, -15));
+  } else if (fr == 5 && tt == 11) {
+    result = valu * (1 / Math.pow(1024, 3));
+  } else if (fr == 5 && tt == 12) {
+    result = valu * (8 * Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, -18));
+  } else if (fr == 5 && tt == 13) {
+    result = valu * (1 / Math.pow(1024, 4));
+  } else if (fr == 6 && tt == 8) {
+    result = valu * Math.pow(10, -3);
+  } else if (fr == 6 && tt == 9) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * 1024));
+  } else if (fr == 6 && tt == 10) {
+    result =
+      valu *
+      (Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, -15));
+  } else if (fr == 6 && tt == 11) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * Math.pow(1024, 3)));
+  } else if (fr == 6 && tt == 12) {
+    result =
+      valu *
+      (Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, 3) * Math.pow(10, -18));
+  } else if (fr == 6 && tt == 13) {
+    result = valu * (1 / (8 * Math.pow(10, 6) * Math.pow(1024, 4)));
+  } else if (fr == 7 && tt == 8) {
+    result = valu * (8 * Math.pow(10, 9) * Math.pow(10, -12));
+  } else if (fr == 7 && tt == 9) {
+    result = valu * (1 / 1024);
+  } else if (fr == 7 && tt == 10) {
+    result = valu * (8 * Math.pow(10, 9) * Math.pow(10, -15));
+  } else if (fr == 7 && tt == 11) {
+    result = valu * (1 / Math.pow(1024, 3));
+  } else if (fr == 7 && tt == 12) {
+    result = valu * (8 * Math.pow(10, 9) * Math.pow(10, -18));
+  } else if (fr == 7 && tt == 13) {
+    result = valu * (1 / Math.pow(1024, 4));
+  }
+
+  return result;
+}
+
+function showResult() {
+  if (event && event.type == "click") {
+    reloadPage(queryParams);
+    return;
+  }
+  var result = getExact();
+
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+  var div3 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>Converted data :   " + result + " </b>";
+
+  output.append(div1);
+  output.append(div2);
+  output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);

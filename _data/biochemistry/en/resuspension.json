@@ -72,7 +72,7 @@
             "labelId": "option1__id",
             "inputBox": "text",
             "inputId": "input1",
-            "dropDown": "moles",
+            "unit": "moles",
             "dropDownId": "inputdrop1",
             "dateTimePicker": false
           },
@@ -81,16 +81,16 @@
             "labelId": "option2__id",
             "inputBox": "text",
             "inputId": "input2",
-            "dropDown": "M",
+            "unit": "moles",
             "dropDownId": "inputdrop2",
             "dateTimePicker": false
           }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -137,6 +137,7 @@
       }
     ],
     "jsfilepaths": [
+      "/js/util.js",
       "/js/biochemistry/resuspension.js"
     ],
     "cssfilepaths": ["/css/style.css"]

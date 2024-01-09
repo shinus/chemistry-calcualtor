@@ -1,0 +1,66 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "chemical thermodynamics calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online boiling altitude Calculator ",
+        "description": "calculate your boiling altitude online easily with no worries",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/boiling-altitude"
+      },
+      {
+        "name": "Online boiling elevation Calculator ",
+        "description": "Calculate boiling elevation ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/boiling-elevation"
+      },
+      {
+        "url": "/freezing-point-depression",
+        "name": "Online freezing point depression calculator",
+        "description": "calculate the freezing point depression easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/gibbs-free-energy",
+        "name": "Online gibbs free energy calculator",
+        "description": "calculate the gibbs free energy",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/gibbs-phase-rule",
+        "name": "Online gibbs phase rule calculator",
+        "description": "calculate the gibbs phase rule",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/heat-combustion",
+        "name": "Online heat combustion calculator",
+        "description": "calculate the heat combustion",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/stp-calculator",
+        "name": "Online stp calculator",
+        "description": "calculate the stp easily",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/vapor-pressure",
+        "name": "Online vapor pressure calculator",
+        "description": "calculate the vapor pressure easily",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

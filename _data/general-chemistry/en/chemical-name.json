@@ -132,7 +132,7 @@
       "answer": ""
     }
   ],
-  "jsfilepaths": ["assets/js/calculator.js"],
+  "jsfilepaths": ["/js/general-chemistry/chemical-name.js"],
   
   "cssfilepaths": ["/css/style.css"]
 }

@@ -185,10 +185,11 @@ let area = [
 ];
 
 let selectFrom = document.getElementById("from");
-let selectTo = document.getElementById("to");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+let selectTo = document.getElementById("to");         
 let defaultval = document.getElementById("from1");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
@@ -1127,7 +1128,7 @@ function convertArea() {
       break;
   }
 
-  result.innerHTML = `${input} ${from} = ${output.toFixed(2)} ${to}`;
+  result =  output;
 }
 let queryParams = [
   {
@@ -1143,11 +1144,24 @@ let queryParams = [
     values: selectTo,
   },
 ];
-function handleSubmit() {
-  convertArea();
-  resultPage2(queryParams);
+
+function showResult() {
+  var result = convertArea();
+
+  // Check if the result is not undefined before displaying
+  if (result !== undefined) {
+    var div1 = document.createElement('div');
+    var div2 = document.createElement('div');
+    output.innerHTML = '';
+    div1.innerHTML = '<b> ' + result + '  </b>';
+    output.append(div1);
+    output.append(div2);
+  } else {
+    console.error('Result is undefined. Check your conversion logic.');
+  }
 }
-calcBtn.addEventListener("click", handleSubmit);
+
+calcBtn.addEventListener("click", showResult);
 
 function setParams(queryParams) {
   let url =
@@ -1177,22 +1191,48 @@ function setParamValues(queryParams) {
     }
   }
 }
+
 function resultPage2(queryParams) {
-  var newUrl = window.location.href;
-  if (!newUrl.includes("?")) {
-    setParams(queryParams);
-  } else {
-    setParams(queryParams);
-    // gtag("event", "page_view", {
-    //   page_location: window.location.pathname + location.search,
-    // });
-  }
+  reloadPage(queryParams);
 }
+
+function reloadPage(queryParams) {
+  let url = "";
+
+  for (queryP of queryParams) {
+    var value;
+
+    if (queryP.values.tagName == "INPUT") {
+      value = queryP.values.value;
+    } else if (queryP.values.tagName == "SELECT") {
+      value = queryP.values.selectedIndex;
+    }
+
+    if (history.pushState) {
+      var str = queryP.name + "=" + value + "&";
+
+      url += str;
+    }
+  }
+
+  url = url.slice(0, -1);
+
+  var newURL =
+    window.location.protocol +
+    "//" +
+    window.location.host +
+    "/" +
+    permaLink +
+    "?" +
+    url;
+  window.location.href = newURL;
+}
+
 function init() {
   var url = window.location.href;
   if (url.includes("?")) {
     setParamValues(queryParams);
-    handleSubmit();
+    showResult();
   }
 }
 init();
