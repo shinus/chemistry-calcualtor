@@ -1,0 +1,80 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "stoichemistry calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online grams to mole Calculator ",
+        "description": "Calculate grams to mole converter ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/grams-to-mole"
+      },
+      {
+        "url": "/hydrogen-concentration",
+        "name": "Online hydrogen concentration calculator",
+        "description": "calculate the hydrogen concentration calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molality-calculator",
+        "name": "Online molality calculator",
+        "description": "calculate the molality calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molar-mass-of-gas",
+        "name": "Online molar mass of gas calculator",
+        "description": "calculate the molar mass of gas easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molarity",
+        "name": "Online molarity calculator",
+        "description": "calculate the molarity calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/mole-calculator",
+        "name": "Online mole calculator",
+        "description": "calculate the mole calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molecular-weight",
+        "name": "Online molecular weight calculator",
+        "description": "calculate the molecular weight calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molefraction",
+        "name": "Online molefraction calculator",
+        "description": "calculate the molefraction calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/normality-calculator",
+        "name": "Online normality calculator",
+        "description": "calculate the normality calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/ppmtomol",
+        "name": "Online ppm to mol calculator",
+        "description": "calculate the ppm to mol calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

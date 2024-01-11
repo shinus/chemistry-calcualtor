@@ -1,0 +1,73 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "physical cehmistry calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online diffusion coefficient Calculator ",
+        "description": "Calculate diffusion coefficient calculator ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/diffusion-coefficient"
+      },
+      {
+        "url": "/half-life",
+        "name": "Online half life calculator",
+        "description": "calculate the half life calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/langumuir-isotherm",
+        "name": "Online langumuir isotherm calculator",
+        "description": "calculate the langumuir isotherm calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/osmotic-pressure",
+        "name": "Online osmotic pressure calculator",
+        "description": "calculate the osmotic pressure calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/partial-pressure-dalton",
+        "name": "Online partial pressure dalton calculator",
+        "description": "calculate the partial pressure dalton calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/partial-pressure-ideal-gas",
+        "name": "Online partial pressure ideal gas calculator",
+        "description": "calculate the partial pressure ideal gas calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/radioactive-decay",
+        "name": "Online radioactive decay calculator",
+        "description": "calculate the radioactive decay calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/rate-of-effusion",
+        "name": "Online rate of effusion calculator",
+        "description": "calculate the rate of effusion calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/two-photon-absorption",
+        "name": "Online two photon absorption calculator",
+        "description": "calculate the two photon absorption calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

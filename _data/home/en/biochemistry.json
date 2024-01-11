@@ -1,0 +1,45 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "biochemistry calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online calibration curve Calculator ",
+        "description": "calculate your calibration curve calculator",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/calibration-curve"
+      },
+      {
+        "name": "Online isoelectric point Calculator ",
+        "description": "Calculate isoelectric point calculator",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/isoelectric-point"
+      },
+      {
+        "url": "/michaelis-menten-equation",
+        "name": "Online michaelis menten equation calculator",
+        "description": "calculate the michaelis menten equation calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/protein-solubility",
+        "name": "Online protein solubility calculator",
+        "description": "calculate the protein solubility calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/resuspension",
+        "name": "Online resuspension calculator",
+        "description": "calculate the resuspension calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

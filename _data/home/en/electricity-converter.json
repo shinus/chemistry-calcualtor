@@ -1,0 +1,101 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "electricity converters calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online capacitance converter Calculator ",
+        "description": "calculate your capacitance converter online easily",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/capacitance-converter"
+      },
+      {
+        "name": "Online charge converter Calculator ",
+        "description": "Calculate charge converter ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/charge-converter"
+      },
+      {
+        "url": "/conductance-converter",
+        "name": "Online conductance converter calculator",
+        "description": "calculate the conductance converter easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/conductivity-converter",
+        "name": "Online conductivity converter calculator",
+        "description": "calculate the conductivity converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/current-converter",
+        "name": "Online currrent converter calculator",
+        "description": "calculate the currrent converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/electric-field-strength-converter",
+        "name": "Online electric field strength converter calculator",
+        "description": "calculate the electric field strength converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/inductance-converter",
+        "name": "Online inductance converter calculator",
+        "description": "calculate the inductance converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/linear-charge-density-converter",
+        "name": "Online linear charge density calculator",
+        "description": "calculate the linear charge density",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/potential-converter",
+        "name": "Online potential calculator",
+        "description": "calculate the potential",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/resistance-converter",
+        "name": "Online resistance calculator",
+        "description": "calculate the resistance",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/surface-charge-density",
+        "name": "Online surface charge density calculator",
+        "description": "calculate the surface charge density",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/surface-current-density",
+        "name": "Online surface current density calculator",
+        "description": "calculate the surface current density",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/volume-charge-density",
+        "name": "Online volume charge density calculator",
+        "description": "calculate the volume charge density",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

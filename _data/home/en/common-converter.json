@@ -1,0 +1,59 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "computer converter calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online area converter Calculator ",
+        "description": "calculate your area converter online easily with no worries",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/area-converter"
+      },
+      {
+        "name": "Online fuel converter Calculator ",
+        "description": "Calculate fuel converter ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/fuel-converter"
+      },
+      {
+        "url": "/length-converter",
+        "name": "Online length converter calculator",
+        "description": "calculate the length converter easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/prefix-converter",
+        "name": "Online prefix converter calculator",
+        "description": "calculate the prefix converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/speed-converter",
+        "name": "Online speed converter calculator",
+        "description": "calculate the speed converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/volume-converter",
+        "name": "Online volume converter calculator",
+        "description": "calculate the volume converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/weight-converter",
+        "name": "Online weight converter calculator",
+        "description": "calculate the weight converter",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

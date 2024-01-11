@@ -1,0 +1,45 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "organic chemistry calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online combustion analysis Calculator ",
+        "description": "Calculate combustion analysis converter ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/combustion-analysis"
+      },
+      {
+        "url": "/combustion-reaction",
+        "name": "Online combustion reaction calculator",
+        "description": "calculate the combustion reaction calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/degree-of-unsaturation",
+        "name": "Online degree of unsaturation calculator",
+        "description": "calculate the degree of unsaturation easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/liquid-ethylene-density",
+        "name": "Online liquid ethylene density calculator",
+        "description": "calculate the liquid ethylene density easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/radiocarbon-dating",
+        "name": "Online radiocarbon carbon dating calculator",
+        "description": "calculate the radiocarbon carbon dating easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

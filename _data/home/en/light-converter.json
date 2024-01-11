@@ -1,0 +1,31 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "light converters calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online intensity converter Calculator ",
+        "description": "calculate your intensity converter online easily",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/intensity-converter"
+      },
+      {
+        "name": "Online luminance converter converter Calculator ",
+        "description": "Calculate luminance converter converter ",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/luminance-converter"
+      },
+      {
+        "url": "/wavelength-converter",
+        "name": "Online wavelength converter calculator",
+        "description": "calculate the wavelength converter easily ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }

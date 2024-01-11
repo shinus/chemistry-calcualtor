@@ -1,0 +1,80 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "h1": "We make calculation easy",
+    "h2": "All-in-one easy-to-use online calculation tools",
+    "TITLE": "general chemistry calculator",
+    "META": "",
+    "features": [
+      {
+        "name": "Online atomic mass Calculator ",
+        "description": "calculate your atomic mass calculator",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/atomic-mass"
+      },
+      {
+        "name": "Online average atomic mass Calculator ",
+        "description": "Calculate average atomic mass calculator",
+        "color": "#fa980b",
+        "icon": "/img/home-icon.svg",
+        "url": "/average-atomic-mass"
+      },
+      {
+        "url": "/bond-order",
+        "name": "Online bond order calculator",
+        "description": "calculate the bond order calculator ",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/chemical-name",
+        "name": "Online chemical name calculator",
+        "description": "calculate the chemical name calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/effective-nuclear-charge",
+        "name": "Online effective nuclear charge calculator",
+        "description": "calculate the effective nuclear charge calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/electron-configuration",
+        "name": "Online electron configuration calculator",
+        "description": "calculate the electron configuration calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/electronegativity",
+        "name": "Online electronegativity calculator",
+        "description": "calculate the electronegativity calclulator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/molar-mass",
+        "name": "Online molar mass calculator",
+        "description": "calculate the molar mass calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/percent-composition",
+        "name": "Online percent composition calculator",
+        "description": "calculate the percent composition calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      },
+      {
+        "url": "/percent-iconic-character",
+        "name": "Online percent iconic character calculator",
+        "description": "calculate the percent iconic character calculator",
+        "icon": "/img/home-icon.svg",
+        "color": "#fa980b"
+      }
+    ]
+  }
