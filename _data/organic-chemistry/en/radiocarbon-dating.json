@@ -82,11 +82,11 @@
           "dateTimePicker": false
         }
       ],
-      "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -133,7 +133,8 @@
       }
     ],
     "jsfilepaths": [
-      "/js/organic-chemistry/radiocarbon-dating.js"
+      "/js/organic-chemistry/radiocarbon-dating.js",
+      "js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

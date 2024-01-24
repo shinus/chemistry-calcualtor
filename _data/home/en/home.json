@@ -7,149 +7,55 @@
   "META": "",
   "features": [
     {
-      "name": "Online Age Calculator ",
-      "description": "Compute your age online easily with no worries",
-      "color": "#fa980b",
-      "icon": "/img/home-icon.svg",
-      "url": "/age-calculator"
-    },
-    {
-      "name": "Online Date Calculator ",
-      "description": "Calculate number of years, months, weeks, days, hours, and seconds remaining for an event",
-      "color": "#fa980b",
-      "icon": "/img/home-icon.svg",
-      "url": "/date-calculator-days"
-    },
-    {
-      "url": "/computer-common-cal",
-      "name": "List of all computer related calculators",
-      "description": "smart tool for computer related calculators",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/common-converters",
-      "name": "List of all common converters",
-      "description": "smart tool for common converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/electricity-converters",
-      "name": "List of all electricity converters",
-      "description": "smart tool for ",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/engineering-converters",
-      "name": "List of all engineering converters",
-      "description": "smart tool for engineering converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/fluids-converters",
-      "name": "List of all fluids converters",
-      "description": "smart tool for fluids converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/heat-converters",
-      "name": "List of all heat converters",
-      "description": "smart tool for heat converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/light-converters",
-      "name": "List of all light converters",
-      "description": "smart tool for light converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/magnetism-converters",
-      "name": "List of all magnetism converters",
-      "description": "smart tool for magnetism converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/medical-converters",
-      "name": "List of all medical converters",
-      "description": "smart tool for medical converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "url": "/radiology-converters",
-      "name": "List of all radiology converters",
-      "description": "smart tool for radiology converters",
-      "icon": "/img/home-icon.svg",
-      "color": "#fa980b"
-    },
-    {
-      "name": "Currency Conversion",
-      "description": "Convert currency",
-      "color": "#fa980b",
-      "icon": "/img/home-icon.svg",
-      "url": "/currency-conversion"
-    },
-    {
-      "name": "Biology Calculators",
-      "description": "Online Biology Calcualtors",
-      "color": "#fa980b",
-      "icon": "/img/home-icon.svg",
-      "url": "/biology"
-    },
-    {
       "name": "Mixture-Solution Calculators",
       "description": "Mixtures and solutions Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/mixture-solution-calculators"
-    },{
+    },
+    {
       "name": "General chemistry Calculators",
       "description": "General chemistry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/general-chemistry-calculators"
-    }
-    ,{
+    },
+    {
       "name": "Stoichiometry Calculators",
       "description": "Stoichiometry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/stoichiometry-calculators"
-    }
-    ,{
+    },
+    {
       "name": "Electrochemistry Calculators",
       "description": "electrochemistry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/electrochemistry-calculators"
-    }
-    ,{
+    },
+    {
       "name": "Biochemistry Calculators",
       "description": "biochemistry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/biochemistry-calculators"
-    },{
+    },
+    {
       "name": "Physical chemistry Calculators",
       "description": "physical chemistry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/physical-chemisty-calculators"
-    },{
+    },
+    {
       "name": "Organic chemistry Calculators",
       "description": "organic chemistry Calcualtors",
       "color": "#fa980b",
       "icon": "/img/home-icon.svg",
       "url": "/organic-chemistry-calculators"
-    },{
+    },
+    {
       "name": "Online chemical thermodynamics",
       "description": "online chemical thermodynamics calculators",
       "color": "#fa980b",
