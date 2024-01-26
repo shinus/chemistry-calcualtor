@@ -101,7 +101,8 @@
         }
     ],
     "jsfilepaths": [
-        "/js/mixture-solution/bleach-dilution.js"
+        "/js/mixture-solution/bleach-dilution.js",
+        "/js/util.js"
     ],
 
     "calculatorData": {
@@ -137,10 +138,10 @@
                 "dateTimePicker": false
             }
         ],
-        "ButtonValue": "Convert",
-        "ButtonId": "calcBtn",
-        "ButtonType": "submit",
-        "resultDiv": "true",
-        "resultDisplay": "none"
+        "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
+      "resultDiv": "true",
+      "resultDisplay": "none"
     }
 }

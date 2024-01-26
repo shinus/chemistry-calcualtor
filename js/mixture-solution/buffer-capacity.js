@@ -16,17 +16,44 @@ let inputdrop1 = document.getElementById("inputdrop1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 let input4 = document.getElementById("input4");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
-console.log("code v5");
-calcBtn.addEventListener("click", calculatebuffer);
-calcBtn.style.background = "black";
+
+var queryParams = [
+  { name: "acid", values: input1 },
+  { name: "aciddrop", values: inputdrop1 },
+  { name: "initial", values: input2 },
+  { name: "final", values: input3 },
+  { name: "buffer", values: inputdrop4 },
+];
+
+function setParamValues(queryParams) {
+  const params = new URLSearchParams(window.location.search);
+  for (const queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName === "INPUT") {
+          queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName === "SELECT") {
+          queryP.values.value = parameter_value; // Change selectedIndex to value
+      }
+  }
+}
+
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+  }
+}
+
+init();
 
 dropdownliter.forEach((listitem) => {
   let option = document.createElement("option");
@@ -69,8 +96,8 @@ function convertToStandardLiter(value, unit) {
 
 // Event Listeners for dynamic update on dropdown change
 inputdrop1.addEventListener("change", updateResults);
-inputdrop2.addEventListener("change", updateResults);
-inputdrop3.addEventListener("change", updateResults);
+// inputdrop2.addEventListener("change", updateResults);
+// inputdrop3.addEventListener("change", updateResults);
 inputdrop4.addEventListener("change", updateResults);
 
 // Function to update results dynamically
@@ -93,22 +120,30 @@ function calculatebuffer() {
   
     // Validate pH values
     if (initialPH < 0 || initialPH > 14 || finalPH < 0 || finalPH > 14) {
-      result.textContent = "Please enter valid pH values between 0 and 14.";
+      result = "Please enter valid pH values between 0 and 14.";
       return;
     }
   
     if (isNaN(volume) || isNaN(initialPH) || isNaN(finalPH)) {
-      result.textContent = "Please enter valid values.";
+      result = "Please enter valid values.";
       return;
     }
   
     const deltaPH = finalPH - initialPH;
     const bufferCapacity = volume / deltaPH; // This assumes that the amount in input1 is molarity (mol/L)
   
-    result.textContent = "Buffer capacity: " + bufferCapacity.toFixed(2) + " mol/liters";
+    return result = "Buffer capacity: " + bufferCapacity.toFixed(2) + " mol/liters";
   }
   
   
-  
-  // Trigger calculation on button click
-  calcBtn.addEventListener("click", calculatebuffer);
+  function showResult() {
+    if (event && event.type == "click") {
+      reloadPage(queryParams);
+      return;
+  }
+    var result = calculatebuffer();
+    output.innerHTML = "<b>" + result + "</b>";
+}
+
+calcBtn.addEventListener("click", showResult);
+

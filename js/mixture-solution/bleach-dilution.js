@@ -18,9 +18,9 @@ let dropOptions = [
 let chlorine_concentration_options = [
     { value: "ppm", name: "parts per million" },
     { value: "g/L", name: "grams per liter" },
-    { value: "mg/L", name: "miligrams per liter" },
+    { value: "mg/L", name: "milligrams per liter" },
     { value: "g/dL", name: "grams per deciliter" },
-    { value: "mg/dL", name: "miligrams per deciliter" }
+    { value: "mg/dL", name: "milligrams per deciliter" }
 ];
 
 let bleach_concentration = document.getElementById("input1");
@@ -29,17 +29,43 @@ let chlorine_volume = document.getElementById("input3");
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
 bleach_concentration.placeholder = "%";
 
+var queryParams = [
+    { name: "bleach", values: bleach_concentration },
+    { name: "concentration", values: chlorine_concentration },
+    { name: "concendrop", values: inputdrop2 },
+    { name: "volume", values: chlorine_volume },
+    { name: "volumedrop", values: inputdrop3 },
+    { name: "product", values: inputdrop4 },
+];
 
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (const queryP of queryParams) {
+        var parameter_value = params.get(queryP.name);
+        if (queryP.values.tagName === "INPUT") {
+            queryP.values.value = parameter_value;
+        } else if (queryP.values.tagName === "SELECT") {
+            queryP.values.value = parameter_value; // Change selectedIndex to value
+        }
+    }
+}
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
 
-
+init();
 
 dropOptions.forEach((option) => {
     let opt = document.createElement("option");
@@ -54,7 +80,6 @@ chlorine_concentration_options.forEach((option) => {
     opt.value = option.value;
     opt.text = option.name;
     inputdrop2.add(opt);
-    
 });
 
 function convertToMgPerL(concentration, unit) {
@@ -68,7 +93,6 @@ function convertToMgPerL(concentration, unit) {
     return concentration * conversionFactors[unit];
 }
 
-// Convert from mg/L to the desired chlorine concentration unit
 function convertFromMgPerL(concentration, unit) {
     const conversionFactors = {
         "ppm": 1,
@@ -79,34 +103,6 @@ function convertFromMgPerL(concentration, unit) {
     };
     return concentration * conversionFactors[unit];
 }
-function calculate() {
-    let bleachConc = parseFloat(bleach_concentration.value.replace('%', '')) / 100; // Convert percentage to a fraction
-    let chlorineUnit = inputdrop2.value;
-    let desiredChlorineConc = convertToMgPerL(parseFloat(chlorine_concentration.value), chlorineUnit);
-    let desiredVolume = parseFloat(chlorine_volume.value);
-    let volumeUnit = inputdrop3.value;
-    let bleachUnit = inputdrop4.value;
-
-    // Convert everything to a common unit (liters) for calculation
-    let volumeInLiters = convertToLiters(desiredVolume, volumeUnit);
-    
-    // Calculate the amount of bleach needed in mg
-    let bleachAmountMg = desiredChlorineConc * volumeInLiters;
-
-    // Calculate the volume of bleach needed in mL
-   // let bleachVolumeMl = (bleachAmountMg * 0.00105) / bleachConc;
-    let bleachVolumeMl = bleachAmountMg / (bleachConc * 1000);
-
-
-    // Convert bleach volume to desired unit
-    let bleachVolumeInDesiredUnit = convertFromLiters(bleachVolumeMl, bleachUnit);
-
-    result.textContent = `You need ${bleachVolumeInDesiredUnit.toFixed(2)} ${bleachUnit} of bleach to achieve the desired concentration.`;
-}
-
-
-
-
 
 function convertToLiters(volume, unit) {
     const conversionFactors = {
@@ -150,5 +146,31 @@ function convertFromLiters(volume, unit) {
     return volume * conversionFactors[unit];
 }
 
-console.log('bleach dilution calculator v14');
+function calculate() {
+    let bleachConc = parseFloat(bleach_concentration.value.replace('%', '')) / 100;
+    let chlorineUnit = inputdrop2.value;
+    let desiredChlorineConc = convertToMgPerL(parseFloat(chlorine_concentration.value), chlorineUnit);
+    let desiredVolume = parseFloat(chlorine_volume.value);
+    let volumeUnit = inputdrop3.value;
+    let bleachUnit = inputdrop4.value;
 
+    let volumeInLiters = convertToLiters(desiredVolume, volumeUnit);
+    let bleachAmountMg = desiredChlorineConc * volumeInLiters;
+    let bleachVolumeMl = bleachAmountMg / (bleachConc * 1000);
+    let bleachVolumeInDesiredUnit = convertFromLiters(bleachVolumeMl, bleachUnit);
+
+    return "You need " + bleachVolumeInDesiredUnit.toFixed(2) + bleachUnit + " of bleach to achieve the desired concentration.";
+}
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+    output.innerHTML = "<b>" + result + "</b>";
+}
+
+calcBtn.addEventListener("click", showResult);
+
+console.log('bleach dilution calculator v14');
