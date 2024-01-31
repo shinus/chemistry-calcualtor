@@ -1,77 +1,106 @@
 
-let dropdownppm = [
-    { value: "mg/l", name: "miligrams per liter(mg/L)" },
-    { value: "ppm", name: "parts per million(ppm)" },
-    { value: "ppb", name: "parts per billion(ppb)" },
-];
-
-let molarMassUnit = [
-    { value: "g/mol", name: "g/mol" }
-];
+// let dropdownppm = [
+//     { value: "mg/l", name: "miligrams per liter(mg/L)" },
+//     { value: "ppm", name: "parts per million(ppm)" },
+//     { value: "ppb", name: "parts per billion(ppb)" },
+// ];
 
 
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 let volume_of_solution = document.getElementById("input2");
 let molality = document.getElementById("input3");
-let inputdrop1 = document.getElementById("inputdrop1");
-let inputdrop2 = document.getElementById("inputdrop2");
+// let inputdrop1 = document.getElementById("inputdrop1");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "ppm", values: input1 },
+    // { name: "ppmdrop", values: inputdrop1 },
+    { name: "molar", values: input2 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init();     
 
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
-
-
-dropdownppm.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop1.add(opt);
-    inputdrop1.value = "mg/l"
-});
-
-molarMassUnit.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop2.add(opt);
-    inputdrop2.value = "g/mol"
-});
+// dropdownppm.forEach((option) => {
+//     let opt = document.createElement("option");
+//     opt.value = option.value;
+//     opt.text = option.name;
+//     inputdrop1.add(opt);
+//     inputdrop1.value = "mg/l"
+// });
 
 function calculate() {
     const ppmInput = parseFloat(input1.value);
     const molarMassInput = parseFloat(input2.value);
-    const ppmUnit = inputdrop1.value;
-    const molarMassUnit = inputdrop2.value;
+    // const ppmUnit = inputdrop1.value;
     
-    // Define conversion factors for units
-    const ppmConversionFactors = {
-        "mg/l": 1,
-        "ppm": 1e-3,
-        "ppb": 1e-6,
-    };
-
-    const molarMassConversionFactors = {
-        "g/mol": 1,
-    };
+    // // Define conversion factors for units
+    // const ppmConversionFactors = {
+    //     "mg/l": 1,
+    //     "ppm": 1e-3,
+    //     "ppb": 1e-6,
+    // };
 
     // Convert input values to common units
-    const ppmInMgPerLiter = ppmInput * ppmConversionFactors[ppmUnit];
-    const molarMassInGramsPerMole = molarMassInput * molarMassConversionFactors[molarMassUnit];
+    const ppmInMgPerLiter = ppmInput;
+    const molarMassInGramsPerMole = molarMassInput;
+    var result;
     
     if (!isNaN(ppmInMgPerLiter) && !isNaN(molarMassInGramsPerMole) && molarMassInGramsPerMole !== 0) {
         const molarity = (ppmInMgPerLiter / 1000) / molarMassInGramsPerMole;
         let resulto = molarity.toFixed(6); // Display up to 6 decimal places
-        result.textContent = `${resulto} molars`;
-        console.log(result);
-        console.log(resulto);
-    } else {
-        alert("Please enter valid PPM and Molar Mass values (Molar Mass should not be zero).");
+        result = resulto;
+    
+       
     }
+    return result
 }
 
-console.log(3487)
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>  " + result  +  " molars  </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);
