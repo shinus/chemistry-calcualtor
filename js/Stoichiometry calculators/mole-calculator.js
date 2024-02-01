@@ -24,11 +24,39 @@ let inputdrop1 = document.getElementById("inputdrop1");
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "mass", values: input1 },
+    { name: "massunit", values: inputdrop1 },
+    { name: "weight", values: input2 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init(); 
 
 gmunits.forEach((option) => {
     let opt = document.createElement("option");
@@ -38,48 +66,21 @@ gmunits.forEach((option) => {
     inputdrop1.value = "g";
 });
 
-let drop2unit = [
-    { value: "g/mol", name: "g/mol" }
-]
-
-drop2unit.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop2.add(opt);
-    inputdrop2.value = "g/mol";
-});
-
-
-molarUnits.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop3.add(opt);
-    inputdrop3.value = "M";
-});
-
 function calculate() {
     const mass = parseFloat(input1.value);
     const molecularWeight = parseFloat(input2.value);
     const massUnit = inputdrop1.value;
-    const molecularWeightUnit = inputdrop2.value;
-    const molarUnit = inputdrop3.value;
 
     // Convert mass to grams if it's not already in grams
     const massInGrams = convertToGrams(mass, massUnit);
 
-    // Convert molecular weight to g/mol if it's not already in g/mol
-    const molecularWeightInGramsPerMole = convertToGrams(molecularWeight, molecularWeightUnit);
-
     // Calculate moles using the mole = mass / molecular weight formula
-    const moles = massInGrams / molecularWeightInGramsPerMole;
+    const moles = massInGrams / molecularWeight;
 
-    // Convert moles to the desired molar unit
-    const molesInDesiredUnit = convertToStandardUnit(moles, molarUnit);
 
     // Display the result with four decimal places
-    result.textContent = `Moles: ${molesInDesiredUnit.toFixed(4)} ${molarUnit}`;
+    result = "Moles: " + moles.toFixed(2) + " molars";
+    return result
 }
 
 
@@ -125,4 +126,25 @@ function convertToStandardUnit(value, unit) {
     }
 }
 
-console.log(8)
+function showResult() {
+  if (event && event.type == "click") {
+      reloadPage(queryParams);
+      return;
+  }
+  var result = calculate();
+
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+  var div3 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>  " + result  +  "   </b>";
+
+  output.append(div1);
+  output.append(div2);
+  output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);
+

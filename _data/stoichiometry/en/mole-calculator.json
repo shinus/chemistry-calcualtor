@@ -81,23 +81,16 @@
           "labelId": "option2__id",
           "inputBox": "text",
           "inputId": "input2",
-          "dropDown": "mol",
+          "unit": "g/mol",
           "dropDownId": "inputdrop2",
-          "dateTimePicker": false
-        },
-        {
-          "labelName": "Moles",
-          "labelId": "option3__id",
-          "dropDown": "mol",
-          "dropDownId": "inputdrop3",
           "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -144,7 +137,7 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/mole-calculator.js"
+      "/js/Stoichiometry calculators/mole-calculator.js", "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

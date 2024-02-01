@@ -1,34 +1,45 @@
-let molarUnits = [
-    { value: "M", name: "molars" },
-    { value: "mM", name: "millimolars" },
-    { value: "µM", name: "micromolars" },
-    { value: "nM", name: "nanomolars" },
-    { value: "pM", name: "picomolars" }
-];
+
 
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 
-let inputdrop3 = document.getElementById("inputdrop3");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-molarUnits.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop3.add(opt);
-    inputdrop3.value = "M";
-});
+var queryParams = [
+    { name: "pH", values: input1 },
+    { name: "pOH", values: input2 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init(); 
 
 function calculate() {
     const pH = parseFloat(input1.value);
     const pOH = parseFloat(input2.value);
-    const unit = inputdrop3.value;
 
     if (!isNaN(pH) && pH >= 0) {
         // Calculate pOH if pH is provided
@@ -39,8 +50,7 @@ function calculate() {
         const concentration = Math.pow(10, -pH);
 
         // Convert the concentration to the selected unit and display
-        const convertedConcentration = convertToStandardUnit(concentration, unit);
-        result.textContent = convertedConcentration.toFixed(4); // Display concentration up to 4 decimal places
+        result = concentration.toFixed(4); // Display concentration up to 4 decimal places
     } else if (!isNaN(pOH) && pOH >= 0) {
         // Calculate pH if pOH is provided
         const calculatedpH = 14 - pOH;
@@ -50,11 +60,11 @@ function calculate() {
         const concentration = Math.pow(10, -pOH);
 
         // Convert the concentration to the selected unit and display
-        const convertedConcentration = convertToStandardUnit(concentration, unit);
-        result.innerText = convertedConcentration.toFixed(4); // Display concentration up to 4 decimal places
+        result = concentration.toFixed(2); // Display concentration up to 4 decimal places
     } else {
         alert("Please enter a valid pH or pOH value.");
     }
+    return result
 }
 
 function convertToStandardUnit(value, unit) {
@@ -74,4 +84,24 @@ function convertToStandardUnit(value, unit) {
     }
 }
 
-console.log(8)
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>  " + result  +  "   </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);

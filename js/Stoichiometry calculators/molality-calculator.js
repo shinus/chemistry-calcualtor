@@ -12,32 +12,42 @@ let dropdowngrams = [
     { value: "lb", name: "pounds (lb)" }
 ];
 
-
-let dropdownMolalityUnits = [
-    { value: "mol_per_wg", name: "mol per micrograms (wg)" },
-    { value: "mol_per_mg", name: "mol per milligrams (mg)" },
-    { value: "mol_per_g", name: "mol per grams (g)" },
-    { value: "mol_per_dag", name: "mol per decagrams (dag)" },
-    { value: "mol_per_kg", name: "mol per kilograms (kg)" },
-    { value: "mol_per_t", name: "mol per metric tons (t)" },
-    { value: "mol_per_gr", name: "mol per grains (gr)" },
-    { value: "mol_per_dr", name: "mol per drachms (dr)" },
-    { value: "mol_per_oz", name: "mol per ounces (oz)" },
-    { value: "mol_per_lb", name: "mol per pounds (lb)" }
-];
-
-
 let moles_of_solute = document.getElementById("input1");
 let mass_of_solvent = document.getElementById("input2");
-let molality = document.getElementById("input3");
 let inputdrop2 = document.getElementById("inputdrop2");
-let inputdrop3 = document.getElementById("inputdrop3");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+var queryParams = [
+    { name: "moles", values: moles_of_solute },
+    { name: "mass", values: mass_of_solvent },
+    { name: "massdrop", values: inputdrop2 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init(); 
 
 dropdowngrams.forEach((option) => {
     let opt = document.createElement("option");
@@ -47,13 +57,6 @@ dropdowngrams.forEach((option) => {
     inputdrop2.value = "kg"
 });
 
-dropdownMolalityUnits.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop3.add(opt);
-    inputdrop3.value = "mol_per_kg"
-});
 
 function convertToStandardGrams(value, unit) {
     switch (unit) {
@@ -94,7 +97,6 @@ function convertToStandardGrams(value, unit) {
 moles_of_solute.addEventListener("input", autoCalculate);
 mass_of_solvent.addEventListener("input", autoCalculate);
 inputdrop2.addEventListener("change", autoCalculate);
-inputdrop3.addEventListener("change", autoCalculate);
 
 
 function autoCalculate() {
@@ -108,12 +110,11 @@ function calculate() {
     let solvent_mass_standard = convertToStandardGrams(parseFloat(mass_of_solvent.value), inputdrop2.value); // Convert to grams
 
     // Compute molality: molality = moles of solute / mass of solvent (in kg)
-    let computed_molality = solute_moles / (solvent_mass_standard / 1000); // divide by 1000 to convert grams to kg
+    let computed_molality = solute_moles / (solvent_mass_standard * 1000); // divide by 1000 to convert grams to kg
+
     
-    // Convert the computed molality to the selected molality unit
-    let converted_molality = convertToSelectedMolalityUnit(computed_molality, inputdrop3.value);
-    
-    molality.value = converted_molality.toFixed(2);
+    result = computed_molality.toFixed(2);
+     return result
 }
 
 function convertToSelectedMolalityUnit(value, unit) {
@@ -143,4 +144,25 @@ function convertToSelectedMolalityUnit(value, unit) {
     }
 }
 
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b> Molality " + result  +  "  mol per kilogram </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);
 

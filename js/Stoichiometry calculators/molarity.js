@@ -29,30 +29,45 @@ let densityUnits = [
     { value: "lb/cu ft", name: "pounds per cubic feet (lb/cu ft)" }
 ];
 
-let molunitsdrop1 = [
-    { value: 'g/mol', name:'g/mol'}
-];
-
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 
-let inputdrop1 = document.getElementById("inputdrop1");
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+var queryParams = [
+    { name: "molar", values: input1 },
+    { name: "concentration", values: input2 },
+    { name: "concentritionunit", values: inputdrop2 },
+];
 
-molunitsdrop1.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop1.add(opt);
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
 
-});
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init(); 
+
 
 densityUnits.forEach((option) => {
     let opt = document.createElement("option");
@@ -62,24 +77,22 @@ densityUnits.forEach((option) => {
 });
 
 // Set initial values for the dropdWowns
-inputdrop1.value = "g/mol";
 inputdrop2.value = "g/mL";
 
 function calculate() {
     const molarMass = parseFloat(input1.value);
     const concentration = parseFloat(input2.value);
-    const molarMassUnit = inputdrop1.value;
     const concentrationUnit = inputdrop2.value;
 
     // Convert molar mass and concentration to standard units
-    const molarMassInGramsPerMole = convertToGrams(molarMass, molarMassUnit);
     const concentrationInGrams = convertToGrams(concentration, concentrationUnit);
 
     // Calculate molarity
-    const molarity = concentrationInGrams / molarMassInGramsPerMole;
+    const molarity = concentrationInGrams / molarMass;
 
     // Display the result
-    result.textContent = molarity.toFixed(4) + " M";
+    result = molarity.toFixed(2) + " M";
+    return result
 }
 
 function convertToGrams(value, unit) {
@@ -104,3 +117,25 @@ function convertToGrams(value, unit) {
             return value;
     }
 }
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b> Molarity " + result  +  "   </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);

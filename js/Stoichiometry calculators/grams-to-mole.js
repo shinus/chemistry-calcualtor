@@ -98,14 +98,7 @@ let pureMetals = [
 ];
 
 
-mol_per_units= [
-    {name:'Grams (g)',value:'g'},
-    
-]
 
-gramsunits= [
-    {name:'Grams (g)',value:'g'},
-]
 
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
@@ -117,11 +110,41 @@ let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "chemical", values: inputdrop1 },
+    { name: "element", values: inputdrop2 },
+    { name: "molar", values: input3 },
+    { name: "mass", values: input4 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init();     
+
 
 // first drop 
 
@@ -204,22 +227,6 @@ molarUnits.forEach((option) => {
   //  inputdrop3.value = "M";
 });
 
-gramsunits.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop4.add(opt);
-    inputdrop4.value = "g";
-});
-
-mol_per_units.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.text = option.name;
-    inputdrop3.add(opt);
-    inputdrop3.value = "g";
-});
-
 // Add an event listener to the substance dropdown
 // Add an event listener to the substance dropdown
 inputdrop2.addEventListener('change', (e) => {
@@ -269,18 +276,16 @@ inputdrop2.dispatchEvent(new Event('change'));
 function calculate() {
     const grams = parseFloat(input4.value);
     const molarMass = parseFloat(input3.value);
-    const unit = inputdrop3.value;
 
     if (!isNaN(grams) && grams >= 0 && !isNaN(molarMass) && molarMass > 0) {
         // Calculate moles using the value: moles = grams / molarMass
         const moles = grams / molarMass;
 
-        // Convert the moles to the selected unit and display
-        const convertedMoles = convertToStandardUnit(moles, unit);
-        result.textContent = convertedMoles.toFixed(4)+ `mol`; // Display moles up to 4 decimal places
+        result = moles.toFixed(2)+ "mol"; // Display moles up to 4 decimal places
     } else {
         alert("Please enter valid values for grams and molar mass.");
     }
+    return result
 }
 
 function convertToStandardUnit(value, unit) {
@@ -299,3 +304,25 @@ function convertToStandardUnit(value, unit) {
             return value;
     }
 }
+
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var result = calculate();
+
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+
+    output.innerHTML = "";
+
+    div1.innerHTML = "<b>  " + result  +  "   </b>";
+
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+}
+
+calcBtn.addEventListener("click", showResult);
