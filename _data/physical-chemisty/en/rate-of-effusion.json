@@ -95,11 +95,11 @@
           "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -145,7 +145,7 @@
         "answer": ""
       }
     ],
-    "jsfilepaths": ["/js/physical-chemisty/rate-of-effusion.js"],
+    "jsfilepaths": ["/js/physical-chemisty/rate-of-effusion.js", "/js/util.js"],
     "cssfilepaths": ["/css/style.css"]
   }
 

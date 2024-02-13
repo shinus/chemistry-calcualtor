@@ -49,13 +49,6 @@
         "color": "#fa980b"
       },
       {
-        "url": "/molecular-weight",
-        "name": "Online molecular weight calculator",
-        "description": "calculate the molecular weight calculator ",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
         "url": "/molefraction",
         "name": "Online molefraction calculator",
         "description": "calculate the molefraction calculator ",

@@ -51,69 +51,74 @@ let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-// drop down unit loops
-for (const option of Object.keys(pressureConversionFactors)) {
-    let opt = document.createElement("option");
-    opt.value = option;
-    opt.text = option;
-    inputdrop1.add(opt);
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+    { name: "pressure", values: input1 },
+    { name: "temperature", values: input2 },
+    { name: "volume", values: input3 },
+    { name: "mass", values: input4 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
-for (const option of Object.keys(temperatureConversionFactors)) {
-    let opt = document.createElement("option");
-    opt.value = option;
-    opt.text = option;
-    inputdrop2.add(opt);
-}
-
-for (const option of Object.keys(volumeConversionFactors)) {
-    let opt = document.createElement("option");
-    opt.value = option;
-    opt.text = option;
-    inputdrop3.add(opt);
-}
-
-for (const option of Object.keys(massConversionFactors)) {
-    let opt = document.createElement("option");
-    opt.value = option;
-    opt.text = option;
-    inputdrop4.add(opt);
-}
+init();  
 
 // Define a function to calculate the molar mass
 function calculateMolarMass() {
-    const pressureUnit = inputdrop1.value;
-    const temperatureUnit = inputdrop2.value;
-    const volumeUnit = inputdrop3.value;
-    const massUnit = inputdrop4.value;
+   var a = Number(input1.value)
+   var b = Number(input2.value)
+   var c = Number(input3.value)
+   var d = Number(input4.value)
+   var result, result2;
+   var r = 0.0821;
 
-    const pressure = parseFloat(input1.value) / pressureConversionFactors[pressureUnit];
-    const temperature = parseFloat(input2.value) * temperatureConversionFactors[temperatureUnit];
-    const volume = parseFloat(input3.value) * volumeConversionFactors[volumeUnit];
-    const mass = parseFloat(input4.value) / massConversionFactors[massUnit];
-
-    // Ideal gas constant (R)
-    const R = 0.0821; // L.atm/mol.K
-
-    // Calculate the number of moles using the ideal gas law
-    const moles = (pressure * volume) / (R * temperature);
-
-    // Calculate molar mass if mass is provided
-    let molarMass;
-    if (!isNaN(mass)) {
-        molarMass = mass / moles;
-    } else {
-        molarMass = "Mass not provided";
-    }
-
-    // Display the result
-    result.textContent = molarMass.toFixed(2) + " g/mol";
+   result = (a * c) / (r * b);
+   result2  = d / result;
+   return [result, result2]
 }
 
-// Add event listener to the "Calculate" button
-calcBtn.addEventListener("click", calculateMolarMass);
-calcBtn.style.background = 'black';
-
+function showResult() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
+    var [result, result2] = calculateMolarMass();
+  
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+  
+    output.innerHTML = "";
+  
+    div1.innerHTML = "<b> Moles  " + result.toFixed(2)  +  "  mol </b>";
+    div2.innerHTML = "<b>Molar mass of the gas " + result2.toFixed(2)  +  "  g/mol </b>";
+  
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+  }
+  
+  calcBtn.addEventListener("click", showResult);

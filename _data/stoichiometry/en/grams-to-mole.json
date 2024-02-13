@@ -101,11 +101,11 @@
           "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -152,7 +152,8 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/grams-to-mole.js"
+      "/js/Stoichiometry calculators/grams-to-mole.js",
+      "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

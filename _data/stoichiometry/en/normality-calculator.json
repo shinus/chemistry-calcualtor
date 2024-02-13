@@ -72,7 +72,7 @@
           "labelId": "option1__id",
           "inputBox": "text",
           "inputId": "input1",
-          "dropDown": "g",
+          "unit": "grams",
           "dropDownId": "inputdrop1",
           "dateTimePicker": false
         },
@@ -81,7 +81,7 @@
           "labelId": "option2__id",
           "inputBox": "text",
           "inputId": "input2",
-          "dropDown": "eq/g",
+          "unit": "eq/g",
           "dropDownId": "inputdrop2",
           "dateTimePicker": false
         },
@@ -90,24 +90,17 @@
           "labelId": "option3__id",
           "inputBox": "text",
           "inputId": "input3",
-          "dropDown": "l",
+          "unit": "liter",
           "dropDownId": "inputdrop3",
           "dateTimePicker": false
         }
-        ,
-        {
-          "labelName": "Normality(N)",
-          "labelId": "option4__id",
-          "dropDown": "l",
-          "dropDownId": "inputdrop4",
-          "dateTimePicker": false
-        }
+        
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -154,7 +147,8 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/normality-calculator.js"
+      "/js/Stoichiometry calculators/normality-calculator.js",
+      "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

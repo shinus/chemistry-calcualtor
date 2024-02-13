@@ -3,17 +3,44 @@ let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-calcBtn.style.background = "#f8320df7";
+var queryParams = [
+  { name: "molar", values: input1 },
+  { name: "carbon", values: input2 },
+  { name: "water", values: input3 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }  
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
+  }
+  
+  init();
+
 
 input1.placeholder = 'g/mol'
 input2.placeholder = 'g'
 input3.placeholder = 'g'
-
-calcBtn.addEventListener('click',calculate)
 
 
 function calculate() {
@@ -41,6 +68,35 @@ function calculate() {
     const empiricalFormula = `C${empiricalCarbon}H${empiricalHydrogen}O${empiricalOxygen}`;
     const empiricalMass = (empiricalCarbon * 12.011) + (empiricalHydrogen * 1.00797) + (empiricalOxygen * 15.9994);
 
-    result.textContent = `${empiricalFormula} , emperial mass is ${empiricalMass.toFixed(3)}`;
-   
+    var result, result2;
+
+    result = empiricalFormula  ;
+    result2 = empiricalMass
+   return [result,result2];
 }
+
+function showResult() {
+    if (event && event.type == "click") {
+      reloadPage(queryParams);
+      return;
+    }
+    var [result, result2] = calculate();
+  
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+    var div5 = document.createElement("div");
+  
+    output.innerHTML = "";
+  
+    div1.innerHTML = "<b> " + result + " emperial mass is  " +  result2 + " </b>";
+  
+    output.append(div1);
+    output.append(div2);
+    output.append(div3);
+    output.append(div4);
+    output.append(div5);
+  }
+  
+  calcBtn.addEventListener("click", showResult);

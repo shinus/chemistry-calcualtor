@@ -72,7 +72,7 @@
           "labelId": "option1__id",
           "inputBox": "text",
           "inputId": "input1",
-          "dropDown": "atm",
+          "unit": "kilopascals",
           "dropDownId": "inputdrop1",
           "dateTimePicker": false
         },
@@ -81,7 +81,7 @@
           "labelId": "option2__id",
           "inputBox": "text",
           "inputId": "input2",
-          "dropDown": "k",
+          "unit": "Celsius",
           "dropDownId": "inputdrop2",
           "dateTimePicker": false
         },
@@ -90,7 +90,7 @@
             "labelId": "option3__id",
             "inputBox": "text",
             "inputId": "input3",
-            "dropDown": "l",
+            "unit": "liters",
             "dropDownId": "inputdrop3",
             "dateTimePicker": false
         },{
@@ -98,16 +98,16 @@
           "labelId": "option4__id",
           "inputBox": "text",
           "inputId": "input4",
-          "dropDown": "mg",
+          "unit": "grams",
           "dropDownId": "inputdrop4",
           "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -154,7 +154,7 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/molar-mass-of-gas.js"
+      "/js/Stoichiometry calculators/molar-mass-of-gas.js", "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

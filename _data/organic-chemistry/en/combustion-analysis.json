@@ -88,11 +88,11 @@
           "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -139,7 +139,8 @@
       }
     ],
     "jsfilepaths": [
-      "/js/organic-chemistry/combustion-analysis.js"
+      "/js/organic-chemistry/combustion-analysis.js",
+      "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

@@ -54,7 +54,7 @@ function showResult() {
 
     output.innerHTML = "";
 
-    div1.innerHTML = "<b>Concentration (x):  " + result  +  "  </b>";
+    div1.innerHTML = "<b>Concentration (x):  " + result.toFixed(2)  +  "  </b>";
 
     output.append(div1);
     output.append(div2);

@@ -117,13 +117,40 @@ let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = 'black';
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-// first drop 
+var queryParams = [
+  { name: "chemical", values: input1 },
+  { name: "element", values: input2 },
+  { name: "molar", values: input3 },
+  { name: "mass", values: input4 },
+];
+
+function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }  
+
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
+  }
+  
+  init();
 
 substanceCategories.forEach((option) => {
     let opt = document.createElement("option");
