@@ -80,20 +80,13 @@
           "inputBox": "text",
           "inputId": "input2",
           "dateTimePicker": false
-        },
-        {
-        "labelName": "Concentration of Hydrogen unit",
-          "labelId": "option3__id",
-          "dropDown": "M",
-          "dropDownId": "inputdrop3",
-          "dateTimePicker": false
         }
       ],
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
+      "ButtonType": "submit",
       "resultDiv": "true",
-      "resultDisplay": "none",
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
-      "ButtonType": "submit"
+      "resultDisplay": "none"
     },
     "TEXTUAL_CONTENT": [
       {
@@ -140,7 +133,8 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/Hydrogen-concentration.js"
+      "/js/Stoichiometry calculators/Hydrogen-concentration.js",
+      "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

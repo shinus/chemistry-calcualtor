@@ -86,7 +86,7 @@
           "labelId": "option3__id",
           "inputBox": "text",
           "inputId": "input3",
-          "dropDown": "M",
+          "unit": "Grams",
           "dropDownId": "inputdrop3",
           "dateTimePicker": false
         }
@@ -96,7 +96,7 @@
           "labelId": "option4__id",
           "inputBox": "text",
           "inputId": "input4",
-          "dropDown": "M",
+          "unit": "Grams",
           "dropDownId": "inputdrop4",
           "dateTimePicker": false
         }
@@ -152,8 +152,7 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/grams-to-mole.js",
-      "/js/util.js"
+      "/js/Stoichiometry calculators/grams-to-mole.js", "/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

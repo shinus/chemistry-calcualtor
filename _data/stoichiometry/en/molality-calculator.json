@@ -82,15 +82,6 @@
           "dropDown": "kg",
           "dropDownId": "inputdrop2",
           "dateTimePicker": false
-        },
-        {
-          "labelName": "Molality",
-          "labelId": "option3__id",
-          "inputBox": "text",
-          "inputId": "input3",
-          "dropDown": "mol/kg",
-          "dropDownId": "inputdrop3",
-          "dateTimePicker": false
         }
       ],
       "ButtonValue": "Calculate",
@@ -144,7 +135,7 @@
       }
     ],
     "jsfilepaths": [
-      "/js/Stoichiometry calculators/molality-calculator.js", "js/util.js"
+      "/js/Stoichiometry calculators/molality-calculator.js","/js/util.js"
     ],
     "cssfilepaths": ["/css/style.css"]
   }

@@ -32,7 +32,6 @@ let densityUnits = [
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 
-let inputdrop1 = document.getElementById("inputdrop1");
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 var output = document.getElementById("result-section");
@@ -42,9 +41,9 @@ const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-    { name: "mass", values: input1 },
-    { name: "conventrition", values: input2 },
-    { name: "conventritionUnit", values: inputdrop2 },
+    { name: "molar", values: input1 },
+    { name: "concentration", values: input2 },
+    { name: "concentritionunit", values: inputdrop2 },
 ];
 
 function setParamValues(queryParams) {
@@ -67,7 +66,8 @@ function init() {
     }
 }
 
-init();  
+init(); 
+
 
 densityUnits.forEach((option) => {
     let opt = document.createElement("option");
@@ -76,7 +76,7 @@ densityUnits.forEach((option) => {
     inputdrop2.add(opt);
 });
 
-
+// Set initial values for the dropdWowns
 inputdrop2.value = "g/mL";
 
 function calculate() {
@@ -124,18 +124,18 @@ function showResult() {
         return;
     }
     var result = calculate();
-  
+
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
     var div3 = document.createElement("div");
-  
+
     output.innerHTML = "";
-  
-    div1.innerHTML = "<b> " + result  +  "   </b>";
-  
+
+    div1.innerHTML = "<b> Molarity " + result  +  "   </b>";
+
     output.append(div1);
     output.append(div2);
     output.append(div3);
-  }
-  
-  calcBtn.addEventListener("click", showResult);
+}
+
+calcBtn.addEventListener("click", showResult);

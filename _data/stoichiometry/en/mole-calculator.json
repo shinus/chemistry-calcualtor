@@ -81,15 +81,8 @@
           "labelId": "option2__id",
           "inputBox": "text",
           "inputId": "input2",
-          "unit": "mole",
+          "unit": "g/mol",
           "dropDownId": "inputdrop2",
-          "dateTimePicker": false
-        },
-        {
-          "labelName": "Moles",
-          "labelId": "option3__id",
-          "unit": "mole",
-          "dropDownId": "inputdrop3",
           "dateTimePicker": false
         }
       ],
