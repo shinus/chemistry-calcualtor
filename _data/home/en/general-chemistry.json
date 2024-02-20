@@ -14,13 +14,6 @@
         "url": "/atomic-mass"
       },
       {
-        "name": "Online average atomic mass Calculator ",
-        "description": "Calculate average atomic mass calculator",
-        "color": "#fa980b",
-        "icon": "/img/home-icon.svg",
-        "url": "/average-atomic-mass"
-      },
-      {
         "url": "/bond-order",
         "name": "Online bond order calculator",
         "description": "calculate the bond order calculator ",

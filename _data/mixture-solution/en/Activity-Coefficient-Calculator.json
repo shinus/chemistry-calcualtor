@@ -80,13 +80,6 @@
         "inputBox": "text",
         "inputId": "input2",
         "dateTimePicker": false
-      },
-      {
-        "labelName": "activty coefficient(f)",
-        "labelId": "option1__id",
-        "inputBox": "text",
-        "inputId": "input3",
-        "dateTimePicker": false
       }
     ],
     "ButtonValue": "Calculate",

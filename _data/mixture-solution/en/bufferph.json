@@ -102,8 +102,8 @@
             "dateTimePicker": false
         }
       ],
-      "ButtonValue": "Convert",
-      "ButtonId": "calcBtn",
+      "ButtonValue": "Calculate",
+      "ButtonId": "calculate_btn",
       "ButtonType": "submit",
       "resultDiv": "true",
       "resultDisplay": "none"
@@ -152,7 +152,7 @@
         "answer": ""
       }
     ],
-    "jsfilepaths": ["/js/mixture-solution/bufferph.js"],
+    "jsfilepaths": ["/js/mixture-solution/bufferph.js", "/js/util.js"],
     "cssfilepaths": ["/css/style.css"]
   }
   

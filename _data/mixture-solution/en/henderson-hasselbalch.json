@@ -72,7 +72,7 @@
         "labelId": "option1__id",
         "inputBox": "text",
         "inputId": "input1",
-        "dropDown": "mM",
+        "unit": "Molar",
         "dropDownId": "inputdrop1",
         "dateTimePicker": false
       },
@@ -81,7 +81,7 @@
         "labelId": "option1__id",
         "inputBox": "text",
         "inputId": "input2",
-        "dropDown": "mM",
+        "unit": "Molar",
         "dropDownId": "inputdrop2",
         "dateTimePicker": false
       },
@@ -93,11 +93,11 @@
         "dateTimePicker": false
       }
     ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
     "resultDiv": "true",
-    "resultDisplay": "none",
-    "ButtonValue": "Convert",
-    "ButtonId": "calcBtn",
-    "ButtonType": "submit"
+    "resultDisplay": "none"
   },
   "TEXTUAL_CONTENT": [
     {
@@ -145,7 +145,7 @@
   ],
   "jsfilepaths": [
     "/js/mixture-solution/henderson-hasselbalch.js",
-    "/js/converter.js"
+    "/js/utils.js"
   ],
   "cssfilepaths": ["/css/style.css"]
 }

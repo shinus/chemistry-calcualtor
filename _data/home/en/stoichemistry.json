@@ -7,13 +7,6 @@
     "META": "",
     "features": [
       {
-        "name": "Online grams to mole Calculator ",
-        "description": "Calculate grams to mole converter ",
-        "color": "#fa980b",
-        "icon": "/img/home-icon.svg",
-        "url": "/grams-to-mole"
-      },
-      {
         "url": "/hydrogen-concentration",
         "name": "Online hydrogen concentration calculator",
         "description": "calculate the hydrogen concentration calculator ",
