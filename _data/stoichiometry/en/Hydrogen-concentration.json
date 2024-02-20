@@ -73,13 +73,6 @@
           "inputBox": "text",
           "inputId": "input1",
           "dateTimePicker": false
-        },
-        {
-          "labelName": "or enter pOH",
-          "labelId": "option2__id",
-          "inputBox": "text",
-          "inputId": "input2",
-          "dateTimePicker": false
         }
       ],
       "ButtonValue": "Calculate",

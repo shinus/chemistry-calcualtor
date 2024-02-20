@@ -205,12 +205,39 @@ const anions = [
 let input1 = document.getElementById("inputdrop1");
 let input2 = document.getElementById("inputdrop2");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-calcBtn.addEventListener("click", calculate);
-calcBtn.style.background = "black";
+var queryParams = [
+  { name: "cation", values: input1 },
+  { name: "anion", values: input2 },
+];
 
+function setParamValues(queryParams) {
+  const params = new URLSearchParams(window.location.search);
+  for (queryP of queryParams) {
+    var parameter_value = params.get(queryP.name);
+    if (queryP.values.tagName == "INPUT") {
+      queryP.values.value = parameter_value;
+    } else if (queryP.values.tagName == "SELECT") {
+      queryP.values.selectedIndex = parameter_value;
+    }
+  }
+}
+
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+}
+
+init()
+
+calcBtn.addEventListener("click", showResult);
 
 cations.forEach((option) => {
     let opt = document.createElement("option");
@@ -236,7 +263,8 @@ anions.forEach((option) => {
     const cation = cations.find(cation => cation.value === input1.value);
 const anion = anions.find(anion => anion.value === input2.value);
     const calculationResult = calculateIonicCompound(cation, anion);
-    result.innerHTML = `Name: ${calculationResult.name}<br>Formula: ${calculationResult.formula}`;
+    result = "Name: " + calculationResult.name + " Formula: " + calculationResult.formula;
+    return result
 }
 
 
@@ -264,4 +292,25 @@ function calculateIonicCompound(cation, anion) {
     };
 }
 
-console.log('ihv')
+function showResult() {
+  if (event && event.type == "click") {
+    reloadPage(queryParams);
+    return;
+  }
+  var result = calculate();
+
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+  var div3 = document.createElement("div");
+  var div4 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>  " + result + "  </b>";
+
+  output.append(div1);
+  output.append(div2);
+  output.append(div3);
+  output.append(div4);
+}
+
