@@ -108,10 +108,11 @@
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Bleach concentration in %:",
+                "labelName": "Bleach concentration",
                 "labelId": "label1",
                 "inputBox": "text",
                 "inputId": "input1",
+                "unit": "%",
                 "dateTimePicker": false
             },
             {
@@ -119,22 +120,17 @@
                 "labelId": "label2",
                 "inputBox": "text",
                 "inputId": "input2",
-                "dropDown": "liters",
+                "unit": "mg/L",
                 "dropDownId": "inputdrop2",
                 "dateTimePicker": false
-            },{
-                "labelName": "Desired clorine volume",
+            },
+            {
+                "labelName": "Desired chlorine volume",
                 "labelId": "label3",
                 "inputBox": "text",
                 "inputId": "input3",
-                "dropDown": "liters",
+                "unit": "liters",
                 "dropDownId": "inputdrop3",
-                "dateTimePicker": false
-            },{
-                "labelName": "Desired unit of measure for bleach product",
-                "labelId": "label4",
-                "dropDown": "liters",
-                "dropDownId": "inputdrop4",
                 "dateTimePicker": false
             }
         ],

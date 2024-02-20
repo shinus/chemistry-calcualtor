@@ -63,9 +63,8 @@
         "inputBox": "text",
         "inputId": "input1",
         "inputName": "boxinput",
-        "dropDown": "in",
+        "unit": "mol/liters",
         "dropDownId": "inputdrop1",
-        "dropDownName": "boxmenu",
         "dateTimePicker": false
       },
       {
@@ -82,15 +81,6 @@
         "inputBox": "text",
         "inputId": "input3",
         "inputName": "boxinput",
-        "dateTimePicker": false
-      },
-      {
-        "labelName": "Buffer capacity",
-        "labelId": "option1__id",
-
-        "dropDown": "in",
-        "dropDownId": "inputdrop4",
-        "dropDownName": "boxmenu",
         "dateTimePicker": false
       }
     ],

@@ -61,27 +61,6 @@
         "description": "calculate the henderson hasselbalch calculator",
         "icon": "/img/home-icon.svg",
         "color": "#fa980b"
-      },
-      {
-        "url": "/sound-converter",
-        "name": "Online sound converter calculator",
-        "description": "calculate the sound converter",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
-        "url": "/time-converter",
-        "name": "Online time converter calculator",
-        "description": "calculate the time converter",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
-        "url": "/torque-converter",
-        "name": "Online torque converter calculator",
-        "description": "calculate the torque converter",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
       }
     ]
   }

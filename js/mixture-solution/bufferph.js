@@ -4,7 +4,7 @@ const buffertype = [
 ]
 
 let dropMolar = [
-    { value: "M", name: "molars" },
+    { value: "M",  name: "molars" },
     { value: "mM", name: "millimolars" },
     { value: "µM", name: "micromolars" },
     { value: "nM", name: "nanomolars" },
@@ -15,15 +15,15 @@ let dropMolar = [
     { value: "yM", name: "joktomolars" }
 ];
 
-console.log('bufferph js updated v9')
-
 let input1 = document.getElementById("input1");
 let inputdrop1 = document.getElementById("inputdrop1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 let input4 = document.getElementById("input4");
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 let inputdrop2 = document.getElementById("inputdrop2");
 let inputdrop3 = document.getElementById("inputdrop3");
 let inputdrop4 = document.getElementById("inputdrop4");
@@ -32,10 +32,11 @@ let label2 = document.querySelector('[for="option2__id"]');
 let label3 = document.querySelector('[for="option3__id"]');
 let label4 = document.querySelector('[for="option4__id"]');
 
-
-const getScript = document.currentScript;
-const permaLink = getScript.dataset.permalink;
-
+var queryParams = [
+    { name: "type", values: inputdrop1 },
+    { name: "Ka", values: input2 },
+    { name: "acid", values: input4 },
+  ];
 
 calcBtn.addEventListener("click", calculateph);
 calcBtn.style.background = "black";
@@ -131,6 +132,10 @@ function updateKa() {
 }
 
 function calculateph() {
+    if (event && event.type == "click") {
+        reloadPage(queryParams);
+        return;
+    }
     const bufferType = inputdrop1.value;
     const KaOrKb = parseFloat(input2.value);
     const pKaOrpKb = parseFloat(input3.value);

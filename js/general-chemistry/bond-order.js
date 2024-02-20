@@ -22,7 +22,6 @@ function init() {
 init()
 
 calcBtn.addEventListener("click", showResult);
-// calcBtn.style.background = "black";
 
 function getExact() {
   let inpt1 = input1.value;

@@ -258,12 +258,12 @@ anions.forEach((option) => {
 
 
   function calculate() {
-    console.log(input1.value)
+    console.log(input1.value, input1)
     console.log(input2.value)
     const cation = cations.find(cation => cation.value === input1.value);
 const anion = anions.find(anion => anion.value === input2.value);
     const calculationResult = calculateIonicCompound(cation, anion);
-    result = "Name: " + calculationResult.name + " Formula: " + calculationResult.formula;
+    result = "Name: " + calculationResult.name + " <br> Formula: " + calculationResult.formula;
     return result
 }
 
@@ -313,4 +313,5 @@ function showResult() {
   output.append(div3);
   output.append(div4);
 }
+
 
