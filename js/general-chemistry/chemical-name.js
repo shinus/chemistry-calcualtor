@@ -1,206 +1,204 @@
 const cations = [
-    {
-      value: "Al3+",
-      name: "Aluminum (Al<sup>3+</sup>)",
-    },
-    {
-      value: "NH4+",
-      name: "Ammonium (NH<sub>4</sub><sup>+</sup>)",
-    },
-    {
-      value: "Ba2+",
-      name: "Barium (Ba<sup>2+</sup>)",
-    },
-    {
-      value: "Ca2+",
-      name: "Calcium (Ca<sup>2+</sup>)",
-    },
-    {
-      value: "Cr2+",
-      name: "Chromium(II) (Cr<sup>2+</sup>)",
-    },
-    {
-      value: "Cr3+",
-      name: "Chromium(III) (Cr<sup>3+</sup>)",
-    },
-    {
-      value: "Cu+",
-      name: "Copper(I) (Cu<sup>+</sup>)",
-    },
-    {
-      value: "Cu2+",
-      name: "Copper(II) (Cu<sup>2+</sup>)",
-    },
-    {
-      value: "Fe2+",
-      name: "Iron(II) (Fe<sup>2+</sup>)",
-    },
-    {
-      value: "Fe3+",
-      name: "Iron(III) (Fe<sup>3+</sup>)",
-    },
-    {
-      value: "H+",
-      name: "Hydrogen (H<sup>+</sup>)",
-    },
-    {
-      value: "H3O+",
-      name: "Hydronium (H<sub>3</sub>O<sup>+</sup>)",
-    },
-    {
-      value: "Pb2+",
-      name: "Lead(II) (Pb<sup>2+</sup>)",
-    },
-    {
-      value: "Li+",
-      name: "Lithium (Li<sup>+</sup>)",
-    },
-    {
-      value: "Mg2+",
-      name: "Magnesium (Mg<sup>2+</sup>)",
-    },
-    {
-      value: "Mn2+",
-      name: "Manganese(II) (Mn<sup>2+</sup>)",
-    },
-    {
-      value: "Mn3+",
-      name: "Manganese(III) (Mn<sup>3+</sup>)",
-    },
-    {
-      value: "Hg+",
-      name: "Mercury(I) (Hg<sup>+</sup>)",
-    },
-    {
-      value: "Hg2+",
-      name: "Mercury(II) (Hg<sup>2+</sup>)",
-    },
-    {
-      value: "NO2+",
-      name: "Nitronium (NO<sub>2</sub><sup>+</sup>)",
-    },
-    {
-      value: "K+",
-      name: "Potassium (K<sup>+</sup>)",
-    },
-    {
-      value: "Ag+",
-      name: "Silver (Ag<sup>+</sup>)",
-    },
-    {
-      value: "Na+",
-      name: "Sodium (Na<sup>+</sup>)",
-    },
-    {
-      value: "Sr2+",
-      name: "Strontium (Sr<sup>2+</sup>)",
-    },
-    {
-      value: "Sn2+",
-      name: "Tin(II) (Sn<sup>2+</sup>)",
-    },
-    {
-      value: "Sn4+",
-      name: "Tin(IV) (Sn<sup>4+</sup>)",
-    },
-    {
-      value: "Zn2+",
-      name: "Zinc (Zn<sup>2+</sup>)",
-    }
-  ];
-  
+  {
+    value: 0,
+    name: "Aluminum (Al3+)",
+  },
+  {
+    value: 1,
+    name: "Ammonium (NH4+)",
+  },
+  {
+    value: 2,
+    name: "Barium (Ba2+)",
+  },
+  {
+    value: 3,
+    name: "Calcium (Ca2+)",
+  },
+  {
+    value: 4,
+    name: "Chromium(II) (Cr2+)",
+  },
+  {
+    value: 5,
+    name: "Chromium(III) (Cr3+)",
+  },
+  {
+    value: 6,
+    name: "Copper(I) (Cu+)",
+  },
+  {
+    value: 7,
+    name: "Copper(II) (Cu2+)",
+  },
+  {
+    value: 8,
+    name: "Iron(II) (Fe2+)",
+  },
+  {
+    value: 9,
+    name: "Iron(III) (Fe3+)",
+  },
+  {
+    value: 10,
+    name: "Hydrogen (H+)",
+  },
+  {
+    value: 11,
+    name: "Hydronium (H3O+)",
+  },
+  {
+    value: 12,
+    name: "Lead(II) (Pb2+)",
+  },
+  {
+    value: 13,
+    name: "Lithium (Li+)",
+  },
+  {
+    value: 14,
+    name: "Magnesium (Mg2+)",
+  },
+  {
+    value: 15,
+    name: "Manganese(II) (Mn2+)",
+  },
+  {
+    value: 16,
+    name: "Manganese(III) (Mn3+)",
+  },
+  {
+    value: 17,
+    name: "Mercury(I) (Hg+)",
+  },
+  {
+    value: 18,
+    name: "Mercury(II) (Hg2+)",
+  },
+  {
+    value: 19,
+    name: "Nitronium (NO2+)",
+  },
+  {
+    value: 20,
+    name: "Potassium (K+)",
+  },
+  {
+    value: 21,
+    name: "Silver (Ag+)",
+  },
+  {
+    value: 22,
+    name: "Sodium (Na+)",
+  },
+  {
+    value: 23,
+    name: "Strontium (Sr2+)",
+  },
+  {
+    value: 24,
+    name: "Tin(II) (Sn2+)",
+  },
+  {
+    value: 25,
+    name: "Tin(IV) (Sn4+)",
+  },
+  {
+    value: 26,
+    name: "Zinc (Zn2+)",
+  },
+];
 
 const anions = [
-    {
-      value: "H-",
-      name: "Hydride (H<sup>-</sup>)",
-    },
-    {
-      value: "F-",
-      name: "Fluoride (F<sup>-</sup>)",
-    },
-    {
-      value: "Cl-",
-      name: "Chloride (Cl<sup>-</sup>)",
-    },
-    {
-      value: "Br-",
-      name: "Bromide (Br<sup>-</sup>)",
-    },
-    {
-      value: "I-",
-      name: "Iodide (I<sup>-</sup>)",
-    },
-    {
-      value: "AsO4^3-",
-      name: "Arsenate (AsO<sub>4</sub><sup>3-</sup>)",
-    },
-    {
-      value: "AsO3^3-",
-      name: "Arsenite (AsO<sub>3</sub><sup>3-</sup>)",
-    },
-    {
-      value: "SO4^2-",
-      name: "Sulfate (SO<sub>4</sub><sup>2-</sup>)",
-    },
-    {
-      value: "HSO4-",
-      name: "Hydrogen sulfate (HSO<sub>4</sub><sup>-</sup>)",
-    },
-    {
-      value: "S2O3^2-",
-      name: "Thiosulfate (S<sub>2</sub>O<sub>3</sub><sup>2-</sup>)",
-    },
-    {
-      value: "SO3^2-",
-      name: "Sulfite (SO<sub>3</sub><sup>2-</sup>)",
-    },
-    {
-      value: "ClO4-",
-      name: "Perchlorate (ClO<sub>4</sub><sup>-</sup>)",
-    },
-    {
-      value: "ClO3-",
-      name: "Chlorate (ClO<sub>3</sub><sup>-</sup>)",
-    },
-    {
-      value: "ClO2-",
-      name: "Chlorite (ClO<sub>2</sub><sup>-</sup>)",
-    },
-    {
-      value: "ClO-",
-      name: "Hypochlorite (ClO<sup>-</sup>)",
-    },
-    {
-      value: "CO3^2-",
-      name: "Carbonate (CO<sub>3</sub><sup>2-</sup>)",
-    },
-    {
-      value: "HCO3-",
-      name: "Hydrogen carbonate or Bicarbonate (HCO<sub>3</sub><sup>-</sup>)",
-    },
-    {
-      value: "C2H3O2-",
-      name: "Acetate (C<sub>2</sub>H<sub>3</sub>O<sub>2</sub><sup>-</sup>)",
-    },
-    {
-      value: "CN-",
-      name: "Cyanide (CN<sup>-</sup>)",
-    },
-    {
-      value: "OCN-",
-      name: "Cyanate (OCN<sup>-</sup>)",
-    },
-    {
-      value: "SCN-",
-      name: "Thiocyanate (SCN<sup>-</sup>)",
-    },
-    {
-      value: "OH-",
-      name: "Hydroxide (OH<sup>-</sup>)",
-    }
-  ];
-  
+  {
+    value: 1,
+    name: "Hydride (H-)",
+  },
+  {
+    value: 2,
+    name: "Fluoride (F-)",
+  },
+  {
+    value: 3,
+    name: "Chloride (Cl-)",
+  },
+  {
+    value: 4,
+    name: "Bromide (Br-)",
+  },
+  {
+    value: 5,
+    name: "Iodide (I-)",
+  },
+  {
+    value: 6,
+    name: "Arsenate (AsO43-)",
+  },
+  {
+    value: 7,
+    name: "Arsenite (AsO33-)",
+  },
+  {
+    value: 8,
+    name: "Sulfate (SO42-)",
+  },
+  {
+    value: 9,
+    name: "Hydrogen sulfate (HSO4-)",
+  },
+  {
+    value: 10,
+    name: "Thiosulfate (S2O32-)",
+  },
+  {
+    value: 11,
+    name: "Sulfite (SO32-)",
+  },
+  {
+    value: 12,
+    name: "Perchlorate (ClO4-)",
+  },
+  {
+    value: 13,
+    name: "Chlorate (ClO3-)",
+  },
+  {
+    value: 14,
+    name: "Chlorite (ClO2-)",
+  },
+  {
+    value: 15,
+    name: "Hypochlorite (ClO-)",
+  },
+  {
+    value: 16,
+    name: "Carbonate (CO32-)",
+  },
+  {
+    value: 17,
+    name: "Hydrogen carbonate or Bicarbonate (HCO3-)",
+  },
+  {
+    value: 18,
+    name: "Acetate (C2H3O2-)",
+  },
+  {
+    value: 19,
+    name: "Cyanide (CN-)",
+  },
+  {
+    value: 20,
+    name: "Cyanate (OCN-)",
+  },
+  {
+    value: 21,
+    name: "Thiocyanate (SCN-)",
+  },
+  {
+    value: 22,
+    name: "Hydroxide (OH-)",
+  },
+];
 
 let input1 = document.getElementById("inputdrop1");
 let input2 = document.getElementById("inputdrop2");
@@ -227,7 +225,19 @@ function setParamValues(queryParams) {
   }
 }
 
+function createDropDown(arr, element) {
+  element.innerHTML = "";
+  for (var i = 0; i < arr.length; i++) {
+    var option = document.createElement("option");
+    option.text = arr[i].name;
+    option.value = arr[i].value;
+    element.appendChild(option);
+  }
+}
+
 function init() {
+  createDropDown(cations, input1);
+  createDropDown(anions, input2);
   var url = window.location.href;
   if (url.includes("?")) {
     setParamValues(queryParams);
@@ -235,59 +245,23 @@ function init() {
   }
 }
 
-init()
+init();
 
-cations.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.innerHTML = option.name;
-    input1.add(opt);
-    input1.value = "Na+";
-});
-
-
-anions.forEach((option) => {
-    let opt = document.createElement("option");
-    opt.value = option.value;
-    opt.innerHTML = option.name;
-    input2.add(opt);
-    input2.value = "H-";
-});
-
-
-  function calculate() {
-    console.log(input1.value, input1)
-    console.log(input2.value)
-    const cation = cations.find(cation => cation.value === input1.value);
-const anion = anions.find(anion => anion.value === input2.value);
-    const calculationResult = calculateIonicCompound(cation, anion);
-    result = "Name: " + calculationResult.name + " <br> Formula: " + calculationResult.formula;
-    return result
+function getSelectedName(dropDown) {
+  return dropDown.options[dropDown.selectedIndex].text;
 }
 
-
-function calculateIonicCompound(cation, anion) {
-    const cationCharge = parseInt(cation.value.replace(/\D/g, ''));
-    const anionCharge = parseInt(anion.value.replace(/\D/g, ''));
-
-    const gcd = (a, b) => b ? gcd(b, a % b) : a;
-    const divisor = gcd(Math.abs(cationCharge), Math.abs(anionCharge));
-
-    const cationCount = Math.abs(anionCharge) / divisor;
-    const anionCount = Math.abs(cationCharge) / divisor;
-
-    const cationSymbol = cation.value.match(/[A-Za-z0-9]+/)[0];
-    const anionSymbol = anion.value.match(/[A-Za-z0-9]+/)[0];
-    const formula = `${cationSymbol}${cationCount > 1 ? cationCount : ''}${anionSymbol}${anionCount > 1 ? anionCount : ''}`;
-
-    const cationName = cation.name.split(' ')[0];
-    const anionName = anion.name.split(' ')[0];
-    const name = `${cationName} ${anionName}`;
-
-    return {
-        formula,
-        name
-    };
+function calculate() {
+  var cat = getSelectedName(input1);
+  var ani = getSelectedName(input2);
+  var resultName = cat.split(" ")[0] + " " + ani.split(" ")[0];
+  var resultFormula = cat.split(" ")[1] + "(" + ani.split(" ")[1] + ")" + "₃";
+  var result =
+    "Ionic compound name: " +
+    resultName +
+    "<br>Chemical formula: " +
+    resultFormula;
+  return result;
 }
 
 function showResult() {
