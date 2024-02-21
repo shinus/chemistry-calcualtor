@@ -23,7 +23,6 @@ init()
 
 calcBtn.addEventListener("click", showResult);
 
-
 function getExact() {
   let inpt1 = input1.value;
   let inpt2 = input2.value;
