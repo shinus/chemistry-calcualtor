@@ -27,13 +27,7 @@
         "icon": "/img/home-icon.svg",
         "color": "#fa980b"
       },
-      {
-        "url": "/effective-nuclear-charge",
-        "name": "Online effective nuclear charge calculator",
-        "description": "calculate the effective nuclear charge calculator",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
+     
       {
         "url": "/electron-configuration",
         "name": "Online electron configuration calculator",

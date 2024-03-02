@@ -74,31 +74,19 @@
           "dateTimePicker": false
         },
         {
-          "labelName": "pKa",
-          "labelId": "option3__id",
-          "inputBox": "text",
-          "inputId": "input3",
-          "inputName": "boxinput",
-          "dateTimePicker": false
-        },
-        {
           "labelName": "Acid concentration",
           "labelId": "option4__id",
-          "dropDown": "in",
           "inputBox": "text",
           "inputId": "input4",
-          "dropDownId": "inputdrop4",
-          "dropDownName": "boxmenu",
+          "unit": "molars (M)",
           "dateTimePicker": false
         },
         {
             "labelName": "Salt concentration",
             "labelId": "option5__id",
-            "dropDown": "in",
             "inputBox": "text",
             "inputId": "input5",
-            "dropDownId": "inputdrop5",
-            "dropDownName": "boxmenu",
+            "unit": "molars (M)",
             "dateTimePicker": false
         }
       ],

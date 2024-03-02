@@ -121,11 +121,6 @@ const elements = [
     { value: "Og", name: "Oganesson", atomicNumber: 118, atomicMass: 294 },
     
   ];
-  
-  
-  
-  
-
 
 const orbitalOrder = [
   "1s",

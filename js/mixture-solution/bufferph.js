@@ -1,167 +1,117 @@
 const buffertype = [
     { value: "Acid", name: "Acid" },
     { value: "Base", name: "Base" },
-]
-
-let dropMolar = [
-    { value: "M",  name: "molars" },
-    { value: "mM", name: "millimolars" },
-    { value: "µM", name: "micromolars" },
-    { value: "nM", name: "nanomolars" },
-    { value: "pM", name: "picomolars" },
-    { value: "fM", name: "femtomolars" },
-    { value: "aM", name: "attomolars" },
-    { value: "zM", name: "zeptomolars" },
-    { value: "yM", name: "joktomolars" }
-];
-
-let input1 = document.getElementById("input1");
-let inputdrop1 = document.getElementById("inputdrop1");
-let input2 = document.getElementById("input2");
-let input3 = document.getElementById("input3");
-let input4 = document.getElementById("input4");
-var output = document.getElementById("result-section");
-var calcBtn = document.getElementById("calculate_btn");
-const getScript = document.currentScript;
-const permaLink = getScript.dataset.permalink;
-let inputdrop2 = document.getElementById("inputdrop2");
-let inputdrop3 = document.getElementById("inputdrop3");
-let inputdrop4 = document.getElementById("inputdrop4");
-let inputdrop5 = document.getElementById("inputdrop5");
-let label2 = document.querySelector('[for="option2__id"]');
-let label3 = document.querySelector('[for="option3__id"]');
-let label4 = document.querySelector('[for="option4__id"]');
-
-var queryParams = [
-    { name: "type", values: inputdrop1 },
-    { name: "Ka", values: input2 },
-    { name: "acid", values: input4 },
   ];
-
-calcBtn.addEventListener("click", calculateph);
-calcBtn.style.background = "black";
-
-buffertype.forEach((listitem) => {
-  let option = document.createElement("option");
-  option.value = listitem.value;
-  option.text = `${listitem.value} - ${listitem.name}`;
-  inputdrop1.add(option);
-  inputdrop1.value = "Acid";
-});
-
-dropMolar.forEach((listitem) => {
-  let option = document.createElement("option");
-  option.value = listitem.value;
-  option.text = `${listitem.value} - ${listitem.name}`;
-  inputdrop4.add(option);
-  inputdrop5.add(option.cloneNode(true))
-  inputdrop4.value = "M";
-  inputdrop5.value = "M";
-});
-
-function updateLabelsBasedOnBufferType() {
-    const bufferType = inputdrop1.value;
-
-    if (bufferType === "Acid") {
-        label2.innerText = "Ka";
-        label3.innerText = "pKa";
-        label4.innerText = "Acid concentration";
-    } else if (bufferType === "Base") {
-        label2.innerText = "Kb";
-        label3.innerText = "pKb";
-        label4.innerText = "Base concentration";
+  
+  let inputdrop = document.getElementById("inputdrop1");
+  let input1 = document.getElementById("input2");
+  let input2 = document.getElementById("input4");
+  let input3 = document.getElementById("input5");
+  var output = document.getElementById("result-section");
+  var calcBtn = document.getElementById("calculate_btn");
+  
+  const getScript = document.currentScript;
+  const permaLink = getScript.dataset.permalink;
+  
+  var queryParams = [
+    { name: "type", values: inputdrop },
+    { name: "Ka", values: input1 },
+    { name: "acid", values: input2 },
+    { name: "salt", values: input3 },
+  ];
+  
+  var tyUnit = [
+    {
+      name: "acid",
+      value: 0,
+    },
+    {
+      name: "base",
+      value: 1,
+    },
+  ];
+  
+  function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (const queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName === "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName === "SELECT") {
+        queryP.values.value = parameter_value; // Change selectedIndex to value
+      }
     }
-}
-
-// Attach event listener to the buffer type dropdown to detect changes
-inputdrop1.addEventListener("change", updateLabelsBasedOnBufferType);
-
-// Call the function once to set initial values
-updateLabelsBasedOnBufferType();
-
-
-function convertToStandardUnit(value, unit) {
-    switch (unit) {
-        // Molar concentration conversions
-        case "M":
-            return value;  // Already a standard unit for molarity in this context
-        case "mM":
-            return value * 1e-3;
-        case "µM":
-            return value * 1e-6;
-        case "nM":
-            return value * 1e-9;
-        case "pM":
-            return value * 1e-12;
-        case "fM":
-            return value * 1e-15;
-        case "aM":
-            return value * 1e-18;
-        case "zM":
-            return value * 1e-21;
-        case "yM":
-            return value * 1e-24;
-        default:
-            return value;
+  }
+  
+  function getSelectedValue(element) {
+    var value = element.options[element.selectedIndex].value;
+    return value;
+  }
+  
+  function createDropDown(arr, element) {
+    element.innerHTML = "";
+    for (var i = 0; i < arr.length; i++) {
+      var option = document.createElement("option");
+      option.text = arr[i].name;
+      option.value = arr[i].value;
+      element.appendChild(option);
     }
-}
-
-// ... [All the previous code you provided]
-
-
-input2.addEventListener("input", updatepKa);
-input3.addEventListener("input", updateKa);
-function updatepKa() {
-    const KaOrKbValue = parseFloat(input2.value);
-    if (!isNaN(KaOrKbValue) && KaOrKbValue > 0) {
-        const pKaOrpKbValue = -Math.log10(KaOrKbValue);
-        input3.value = pKaOrpKbValue.toFixed(4);
-    } else {
-        input3.value = "";  // Clear the pKa/pKb field if Ka/Kb is invalid
+  }
+  
+  function init() {
+    createDropDown(tyUnit, inputdrop);
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
     }
-}
-
-function updateKa() {
-    const pKaOrpKbValue = parseFloat(input3.value);
-    if (!isNaN(pKaOrpKbValue)) {
-        const KaOrKbValue = Math.pow(10, -pKaOrpKbValue);
-        input2.value = KaOrKbValue.toExponential(4);  // Display in scientific notation for clarity
-    } else {
-        input2.value = "";  // Clear the Ka/Kb field if pKa/pKb is invalid
-    }
-}
-
-function calculateph() {
+  }
+  
+  init();
+  
+  function calculatebuffer() {
+    const ty = Number(getSelectedValue(inputdrop));
+    const in1 = Number(input1.value);
+    const in2 = Number(input2.value);
+    const in3 = Number(input3.value);
+    var result, result2;
+  
+    if (ty == 0) {
+        result = -Math.log10(in1); // For acid
+      } else {
+        const Kb = 1e-14 / in1; // Base dissociation constant (Kb)
+        result = -Math.log10(Kb); // For base
+      }
+    result2 = result + Math.log(in3 / in2);
+    if (ty === 0) {
+        // For acid: pH = pKa + log([A^-]/[HA])
+        result2 = result + Math.log10(in3 / in2);
+      } else {
+        // For base: pOH = pKb + log([HA]/[A^-]), result2 = 14 - pOH
+     const poH = result + Math.log10(in3 / in2);
+        result2 = 14 - poH;
+      }
+  
+    return [result, result2];
+  }
+  
+  function showResult() {
     if (event && event.type == "click") {
-        reloadPage(queryParams);
-        return;
+      reloadPage(queryParams);
+      return;
     }
-    const bufferType = inputdrop1.value;
-    const KaOrKb = parseFloat(input2.value);
-    const pKaOrpKb = parseFloat(input3.value);
-    const concentration = convertToStandardUnit(parseFloat(input4.value), inputdrop4.value);
-    const saltConcentration = convertToStandardUnit(parseFloat(input5.value), inputdrop5.value);
-
-    if (isNaN(KaOrKb) || isNaN(pKaOrpKb) || isNaN(concentration) || isNaN(saltConcentration)) {
-        alert("Please ensure all inputs are valid.");
-        return;
-    }
-
-    let pH = 0;
-
-    // For Acid
-    if (bufferType === "Acid") {
-        pH = pKaOrpKb + Math.log10(saltConcentration / concentration);
-    } 
-    // For Base
-    else if (bufferType === "Base") {
-        const pOH = pKaOrpKb + Math.log10(saltConcentration / concentration);
-        pH = 14 - pOH;
-    }
-
-    // Display the result
-    result.innerText = `pH : ${pH.toFixed(4)}`;
-}
-
-// Trigger calculation on button click
-calcBtn.addEventListener("click", calculateph);
+    var [result, result2] = calculatebuffer();
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+  
+    output.innerHTML = "";
+  
+    div1.innerHTML = "<b>pKa  " + result.toFixed(2) + "   </b>";
+    div2.innerHTML = "<b>pH  " + result2.toFixed(2) + "   </b>";
+  
+    output.append(div1);
+    output.append(div2);
+  }
+  
+  calcBtn.addEventListener("click", showResult);
+  
