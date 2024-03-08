@@ -42,13 +42,6 @@
         "color": "#fa980b"
       },
       {
-        "url": "/concentration",
-        "name": "Online concentration calculator",
-        "description": "calculate the concentration calculator",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
         "url": "/dilution-factor",
         "name": "Online dilution calculator",
         "description": "calculate the dilution factor",

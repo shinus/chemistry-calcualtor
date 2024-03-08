@@ -5,6 +5,6 @@ lang: en
 fileName: percent-ionic-character
 folderName: general-chemistry
 tool: medical-converters
-permalink: /percent-ionic-character
+permalink: /percent-iconic-character
 ---
 

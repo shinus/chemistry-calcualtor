@@ -132,12 +132,58 @@ let inputdrop4 = document.getElementById("inputdrop4");
 let input5 = document.getElementById("input5");
 let inputdrop5 = document.getElementById("inputdrop5");
 
-let calcBtn = document.getElementById("calcBtn");
-let result = document.getElementById("result-section");
+var output = document.getElementById("result-section");
+var calcBtn = document.getElementById("calculate_btn");
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
 
-calcBtn.style.background = 'black'
+var queryParams = [
+  { name: "first", values: input1 },
+  { name: "firstdrop", values: inputdrop1 },
+  { name: "second", values: input2 },
+  { name: "seconddrop", values: inputdrop2 },
+  { name: "third", values: input3 },
+  { name: "thirddrop", values: inputdrop3 },
+  { name: "fourth", values: input4 },
+  { name: "fourthdrop", values: input4 },
+  { name: "fifth", values: input5 },
+  { name: "fifthdrop", values: inputdrop5 },
+];
+function createDropDown(arr, element) {
+    element.innerHTML = "";
+    for (var i = 0; i < arr.length; i++) {
+      var option = document.createElement("option");
+      option.text = arr[i].name;
+      option.value = arr[i].value;
+      element.appendChild(option);
+    }
+  }
 
-calcBtn.addEventListener('click',calculateresult)
+  function setParamValues(queryParams) {
+    const params = new URLSearchParams(window.location.search);
+    for (queryP of queryParams) {
+      var parameter_value = params.get(queryP.name);
+      if (queryP.values.tagName == "INPUT") {
+        queryP.values.value = parameter_value;
+      } else if (queryP.values.tagName == "SELECT") {
+        queryP.values.selectedIndex = parameter_value;
+      }
+    }
+  }
+  function getSelectedValue(element) {
+    var value = element.options[element.selectedIndex].value;
+    return value;
+  }
+
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+}
+
+init();
 
 elements.forEach((option) => {
   let opt = document.createElement("option");
@@ -161,8 +207,6 @@ input2.value = 0;
 input3.value = 0;
 input4.value = 0;
 input5.value = 0;
-
-console.log(8)
 
 function calculateresult(){
     let element1val = parseFloat(input1.value);
@@ -202,11 +246,34 @@ let percent5 = ((element5.atomicMass * element5val) / molecularweight) * 100;
 
 //console.log("" + percent1 + "Percentages: ", percent1, percent2, percent3, percent4, percent5);
 
-result.innerText = "The total molecular weight is " + molecularweight + " amu\n" +
+result = "The total molecular weight is " + molecularweight + " amu\n" +
                     (element1val ? "Element 1: " + element1.name + ", Mass: " + (element1.atomicMass * element1val) + ", Percentage: " + percent1 + "%\n" : "") +
                     (element2val ? "Element 2: " + element2.name + ", Mass: " + (element2.atomicMass * element2val) + ", Percentage: " + percent2 + "%\n" : "") +
                     (element3val ? "Element 3: " + element3.name + ", Mass: " + (element3.atomicMass * element3val) + ", Percentage: " + percent3 + "%\n" : "") +
                     (element4val ? "Element 4: " + element4.name + ", Mass: " + (element4.atomicMass * element4val) + ", Percentage: " + percent4 + "%\n" : "") +
                     (element5val ? "Element 5: " + element5.name + ", Mass: " + (element5.atomicMass * element5val) + ", Percentage: " + percent5 + "%\n" : "");
 
+                    return result
+}
+
+function showResult() {
+  if (event && event.type == "click") {
+    reloadPage(queryParams);
+    return;
+  }
+  var [a, b ,result] = getExact();
+
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+  var div3 = document.createElement("div");
+  var div4 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>  " + result + "  </b>";
+
+  output.append(div1);
+  output.append(div2);
+  output.append(div3);
+  output.append(div4);
 }

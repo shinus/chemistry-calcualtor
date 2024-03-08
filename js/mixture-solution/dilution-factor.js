@@ -39,7 +39,6 @@ function createDropDown(arr, element) {
 }
 
 function init() {
-  createDropDown(tyUnit, inputdrop);
   var url = window.location.href;
   if (url.includes("?")) {
     setParamValues(queryParams);
@@ -51,24 +50,41 @@ init();
 
 
 function calculateDilutionFactor() {
-  const unit1 = inputdrop1.value;
-  const unit2 = inputdrop2.value;
-  const unit3 = inputdrop3.value;
 
   // Convert the input values to standard cubic meters
-  const initialVolumeInM3 = convertToStandardCubicMeter(parseFloat(input1.value), unit1);
-  const dilutantVolumeInM3 = convertToStandardCubicMeter(parseFloat(input2.value), unit2);
+  const initialVolumeInM3 = (parseFloat(input1.value));
+  const dilutantVolumeInM3 = (parseFloat(input2.value));
 
   // Calculate the final volume in cubic meters
   const finalVolumeInM3 = initialVolumeInM3 + dilutantVolumeInM3;
 
   // Convert the final volume back to the desired unit
-  const finalVolumeInDesiredUnit = convertFromStandardCubicMeter(finalVolumeInM3, unit3);
+  const finalVolumeInDesiredUnit = (finalVolumeInM3);
 
   const totalToStock = `1:${(finalVolumeInM3 / initialVolumeInM3).toFixed(4)}`;
   const dilutantToStock = `1:${(dilutantVolumeInM3 / initialVolumeInM3).toFixed(4)}`;
 
   // Display the results
-  result.textContent = `Final Volume (in ${unit3}): ${finalVolumeInDesiredUnit.toFixed(2)}; Total to Stock: ${totalToStock}; Dilutant to Stock: ${dilutantToStock}`;
+  result = `Final Volume : ${finalVolumeInDesiredUnit.toFixed(2)}; Total to Stock: ${totalToStock}; Dilutant to Stock: ${dilutantToStock}`;
+  return result
 }
+
+function showResult() {
+  if (event && event.type == "click") {
+    reloadPage(queryParams);
+    return;
+  }
+  var result = calculateDilutionFactor();
+  var div1 = document.createElement("div");
+  var div2 = document.createElement("div");
+
+  output.innerHTML = "";
+
+  div1.innerHTML = "<b>  " + result + "   </b>";
+
+  output.append(div1);
+  output.append(div2);
+}
+
+calcBtn.addEventListener("click", showResult);
 

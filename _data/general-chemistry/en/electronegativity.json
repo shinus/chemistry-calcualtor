@@ -81,28 +81,12 @@
         "dropDownId": "inputdrop2",
         "dateTimePicker": false
       }
-      ,
-      {
-        "labelName": "Electronegativity of first element(x)",
-        "labelId": "label3",
-        "inputBox": "text",
-        "inputId": "input3",
-        "dateTimePicker": false
-      }
-      ,
-      {
-        "labelName": "Electronegativity of second element(x)",
-        "labelId": "label4",
-        "inputBox": "text",
-        "inputId": "input4",
-        "dateTimePicker": false
-      }
     ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
     "resultDiv": "true",
-    "resultDisplay": "none",
-    "ButtonValue": "Convert",
-    "ButtonId": "calcBtn",
-    "ButtonType": "submit"
+    "resultDisplay": "none"
   },
   "TEXTUAL_CONTENT": [
     {
@@ -148,6 +132,6 @@
       "answer": ""
     }
   ],
-  "jsfilepaths": ["/js/general-chemistry/electronegativity.js"],
+  "jsfilepaths": ["/js/general-chemistry/electronegativity.js", "/js/util.js"],
   "cssfilepaths": ["/css/style.css"]
 }

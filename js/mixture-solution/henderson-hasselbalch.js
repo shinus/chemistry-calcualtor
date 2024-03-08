@@ -40,5 +40,62 @@ function calculatePh() {
     let pKa = parseFloat(pk.value);
 
     let pH = pKa + Math.log10(baseVal / acidVal);
-    result.innerHTML = `pH of the solution: ${pH.toFixed(4)}`;
+    result = `pH of the solution: ${pH.toFixed(2)}`;
+    return result;
 }
+
+function resultPage2(queryParams) {
+    reloadPage(queryParams);
+  }
+
+  function reloadPage(queryParams) {
+    let url = "";
+  
+    for (queryP of queryParams) {
+      var value;
+  
+      if (queryP.values.tagName == "INPUT") {
+        value = queryP.values.value;
+      } else if (queryP.values.tagName == "SELECT") {
+        value = queryP.values.selectedIndex;
+      }
+  
+      if (history.pushState) {
+        var str = queryP.name + "=" + value + "&";
+  
+        url += str;
+      }
+    }
+  
+    url = url.slice(0, -1);
+  
+    var newURL =
+      window.location.protocol +
+      "//" +
+      window.location.host +
+      "/" +
+      permaLink +
+      "?" +
+      url;
+    window.location.href = newURL;
+  }
+
+function showResult() {
+    if (event && event.type == "click") {
+      reloadPage(queryParams);
+      return;
+    }
+    var result = calculatePh();
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+  
+    output.innerHTML = "";
+  
+    div1.innerHTML = "<b>  " + result + "   </b>";
+  
+    output.append(div1);
+    output.append(div2);
+  }
+  
+  calcBtn.addEventListener("click", showResult);
+  

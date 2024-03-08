@@ -27,14 +27,6 @@
         "icon": "/img/home-icon.svg",
         "color": "#fa980b"
       },
-     
-      {
-        "url": "/electron-configuration",
-        "name": "Online electron configuration calculator",
-        "description": "calculate the electron configuration calculator",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
       {
         "url": "/electronegativity",
         "name": "Online electronegativity calculator",
@@ -43,23 +35,9 @@
         "color": "#fa980b"
       },
       {
-        "url": "/molar-mass",
-        "name": "Online molar mass calculator",
-        "description": "calculate the molar mass calculator",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
         "url": "/percent-composition",
         "name": "Online percent composition calculator",
         "description": "calculate the percent composition calculator",
-        "icon": "/img/home-icon.svg",
-        "color": "#fa980b"
-      },
-      {
-        "url": "/percent-iconic-character",
-        "name": "Online percent iconic character calculator",
-        "description": "calculate the percent iconic character calculator",
         "icon": "/img/home-icon.svg",
         "color": "#fa980b"
       }
